@@ -1,7 +1,7 @@
 body {
   padding: 32px 100px 100px 100px;
   margin: auto;
-  background: linear-gradient(to bottom, white 0%, white 800px, #2B2730 800px, #2B2730 2477px, white 2477px);
+  background: linear-gradient(to bottom, white 0%, white 800px, #2B2730 800px, #2B2730 2400px, white 2400px);
   font-family: Poppins;
 }
 
@@ -68,14 +68,13 @@ nav .menu_right .button {
   background: #2B2730;
   color: #FFF;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 20px;
 }
 
 .banner {
   width: 100%;
-  height: 1049.654px;
+  margin-top: 117px;
 }
 
 .banner .row {
@@ -83,14 +82,14 @@ nav .menu_right .button {
   display: flex;
 }
 
-.banner .row p {
+.banner .row h2 {
   color: #2B2730;
   font-size: 72px;
   font-weight: 700;
   line-height: 80px;
 }
 
-.banner .row p .highlight {
+.banner .row h2 .highlight {
   color: #FFB84C;
 }
 
@@ -98,7 +97,6 @@ nav .menu_right .button {
   position: relative;
   width: 204px;
   height: 204px;
-  margin-top: 35px;
 }
 
 .banner .row .outer-circle .inner-circle {
@@ -117,8 +115,6 @@ nav .menu_right .button {
 }
 
 .banner .row .outer-circle .inner-circle p {
-  margin: 0;
-  padding: 0;
   text-align: center;
   font-size: 19.68px;
   color: white;
@@ -129,7 +125,8 @@ nav .menu_right .button {
 }
 
 .banner .screen {
-  width: 97%;
+  width: 100%;
+  margin-top: 116px;
   height: auto;
   flex-shrink: 0;
   border-radius: 32px;
@@ -142,12 +139,12 @@ nav .menu_right .button {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 116px;
   background-color: #2B2730;
   gap: 116px;
 }
 
-.team p {
+.team h2 {
   color: #FFB84C;
   font-size: 64px;
   font-weight: 700;
@@ -176,6 +173,7 @@ nav .menu_right .button {
 .team .row2 {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .team .row2 .users {
@@ -185,9 +183,7 @@ nav .menu_right .button {
 }
 
 .team .row2 .users .data-pair {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  width: 213px;
 }
 
 .team .row2 .users .data-pair li {
@@ -198,6 +194,9 @@ nav .menu_right .button {
 .team .row2 .users .data-pair .number {
   font-size: 64px;
   color: #FFB84C;
+  font-weight: 700;
+  line-height: 72px;
+  margin-bottom: 8px;
 }
 
 .team .row2 .users .data-pair .description {

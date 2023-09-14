@@ -8,8 +8,8 @@ body {
                                 white 0%,
                                 white 800px,
                                 $black 800px,
-                                $black 2477px,
-                                white 2477px
+                                $black 2400px,
+                                white 2400px
                                 );
     font-family: Poppins;
 }
@@ -67,7 +67,6 @@ nav {
             background: $black;
             color: #FFF;
             font-size: 14px;
-            font-style: normal;
             font-weight: 500;
             line-height: 20px;
         }
@@ -77,11 +76,11 @@ nav {
 
 .banner {
     width: 100%;
-    height: 1049.654px;
+    margin-top: 117px;
     .row {
         flex-shrink: 0;
         display: flex;
-        p {
+        h2 {
             color: $black;
             font-size: 72px;
             font-weight: 700;
@@ -94,7 +93,6 @@ nav {
             position: relative;
             width: 204px;
             height: 204px;
-            margin-top: 35px;
             .inner-circle {
                 position: absolute;
                 top: 50%;
@@ -112,8 +110,6 @@ nav {
                     .bigger_word {
                         font-size: 39.36px;
                     }
-                    margin: 0;
-                    padding: 0;
                     text-align: center;
                     font-size: 19.68px;
                     color: white;
@@ -122,7 +118,8 @@ nav {
         }
     }
     .screen {
-        width: 97%;
+        width: 100%;
+        margin-top: 116px;
         height: auto;
         flex-shrink: 0;
         border-radius: 32px;
@@ -137,10 +134,10 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 116px;
     background-color: $black;
     gap: 116px;
-    p {
+    h2 {
         color: #FFB84C;
         font-size: 64px;
         font-weight: 700;
@@ -164,14 +161,13 @@ nav {
     .row2 {
         width: 100%;
         display: flex;
+        justify-content: space-between;
         .users {
             display: flex;
             width: 700px;
             gap: 32px;
             .data-pair {
-                display: flex;
-                flex-direction: column;
-                text-align: left;
+                width: 213px;
                 li {
                     color: #FFF;
                     list-style: none;
@@ -179,6 +175,9 @@ nav {
                 .number {
                     font-size: 64px;
                     color: #FFB84C;
+                    font-weight: 700;
+                    line-height: 72px;
+                    margin-bottom: 8px;
                 }
                 .description {
                     font-size: 32px;
