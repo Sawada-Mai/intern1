@@ -1,5 +1,6 @@
 
 $black: #2B2730;
+$highlight: #FFB84C;
 
 body {
     padding: 32px 100px 100px 100px;
@@ -8,8 +9,8 @@ body {
                                 white 0%,
                                 white 800px,
                                 $black 800px,
-                                $black 2400px,
-                                white 2400px
+                                $black 2360px,
+                                white 2360px
                                 );
     font-family: Poppins;
 }
@@ -85,8 +86,9 @@ nav {
             font-size: 72px;
             font-weight: 700;
             line-height: 80px;
+            margin-right: 70px;
             .highlight {
-                color: #FFB84C;
+                color: $highlight;
             }
         }
         .outer-circle {
@@ -138,7 +140,7 @@ nav {
     background-color: $black;
     gap: 116px;
     h2 {
-        color: #FFB84C;
+        color: $highlight;
         font-size: 64px;
         font-weight: 700;
         line-height: 72px; /* 112.5% */
@@ -174,7 +176,7 @@ nav {
                 }
                 .number {
                     font-size: 64px;
-                    color: #FFB84C;
+                    color: $highlight;
                     font-weight: 700;
                     line-height: 72px;
                     margin-bottom: 8px;
@@ -207,6 +209,7 @@ nav {
     display: inline-flex;
     align-items: flex-start;
     margin-top: 224px;
+    width: 100%;
     gap: 30px;
     h3 {
         align-self: stretch;
@@ -217,6 +220,7 @@ nav {
         margin: 0;
     }
     .left_text {
+        width: 604px;
         h2 {
             color: $black;
             font-size: 56px;
@@ -228,6 +232,7 @@ nav {
         }
         p {
             margin-bottom: 24px;
+            letter-spacing: -0.4px;
         }
         .button {
             display: inline-flex;
@@ -248,8 +253,7 @@ nav {
         color: $black;
         font-size: 16px;
         font-weight: 400;
-        line-height: 24px; /* 150% */
-        letter-spacing: -0.4px;
+        line-height: 24px;
         margin: 0;
     }
     .grip {
@@ -263,7 +267,7 @@ nav {
             gap: 34px;
             .col {
                 display: flex;
-                width: 286px;
+                width: 270px; /*何故か見本の幅のサイズと見た目が違う*/
                 height: 280px;
                 flex-direction: column;
                 align-items: flex-start;
@@ -303,7 +307,7 @@ nav {
         align-items: flex-start;
         gap: 10px;
         border-radius: 32px;
-        background: #FFB84C;
+        background: $highlight;
         color: $black;
         font-size: 14px;
         font-weight: 500;

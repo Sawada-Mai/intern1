@@ -1,7 +1,8 @@
+@charset "UTF-8";
 body {
   padding: 32px 100px 100px 100px;
   margin: auto;
-  background: linear-gradient(to bottom, white 0%, white 800px, #2B2730 800px, #2B2730 2400px, white 2400px);
+  background: linear-gradient(to bottom, white 0%, white 800px, #2B2730 800px, #2B2730 2360px, white 2360px);
   font-family: Poppins;
 }
 
@@ -87,6 +88,7 @@ nav .menu_right .button {
   font-size: 72px;
   font-weight: 700;
   line-height: 80px;
+  margin-right: 70px;
 }
 
 .banner .row h2 .highlight {
@@ -225,6 +227,7 @@ nav .menu_right .button {
   display: inline-flex;
   align-items: flex-start;
   margin-top: 224px;
+  width: 100%;
   gap: 30px;
 }
 
@@ -235,6 +238,10 @@ nav .menu_right .button {
   font-weight: 700;
   line-height: 32px;
   margin: 0;
+}
+
+.features .left_text {
+  width: 604px;
 }
 
 .features .left_text h2 {
@@ -250,6 +257,7 @@ nav .menu_right .button {
 
 .features .left_text p {
   margin-bottom: 24px;
+  letter-spacing: -0.4px;
 }
 
 .features .left_text .button {
@@ -271,8 +279,6 @@ nav .menu_right .button {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  /* 150% */
-  letter-spacing: -0.4px;
   margin: 0;
 }
 
@@ -291,7 +297,8 @@ nav .menu_right .button {
 
 .features .grip .row .col {
   display: flex;
-  width: 286px;
+  width: 270px;
+  /*何故か見本の幅のサイズと見た目が違う*/
   height: 280px;
   flex-direction: column;
   align-items: flex-start;
