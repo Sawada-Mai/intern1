@@ -2,6 +2,7 @@ body {
   padding: 32px 100px 100px 100px;
   margin: auto;
   background: linear-gradient(to bottom, white 0%, white 800px, #2B2730 800px, #2B2730 2477px, white 2477px);
+  font-family: Poppins;
 }
 
 a {
@@ -9,11 +10,12 @@ a {
 }
 
 a:hover {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 nav {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -37,9 +39,7 @@ nav .menu_left .menu_link {
 
 nav .menu_left .menu_link a {
   color: #2B2730;
-  font-family: Poppins;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
@@ -53,9 +53,7 @@ nav .menu_right {
 
 nav .menu_right a {
   color: #2B2730;
-  font-family: Poppins;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
@@ -69,7 +67,6 @@ nav .menu_right .button {
   border-radius: 100px;
   background: #2B2730;
   color: #FFF;
-  font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -77,20 +74,18 @@ nav .menu_right .button {
 }
 
 .banner {
+  width: 100%;
   height: 1049.654px;
 }
 
 .banner .row {
-  width: 1203px;
   flex-shrink: 0;
   display: flex;
 }
 
 .banner .row p {
   color: #2B2730;
-  font-family: Poppins;
   font-size: 72px;
-  font-style: normal;
   font-weight: 700;
   line-height: 80px;
 }
@@ -154,9 +149,7 @@ nav .menu_right .button {
 
 .team p {
   color: #FFB84C;
-  font-family: Poppins;
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
   line-height: 72px;
   /* 112.5% */
@@ -219,7 +212,6 @@ nav .menu_right .button {
 
 .team .row2 a p {
   color: #FFF;
-  font-family: Poppins;
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
@@ -240,7 +232,6 @@ nav .menu_right .button {
 .features h3 {
   align-self: stretch;
   color: #2B2730;
-  font-family: Poppins;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -249,7 +240,6 @@ nav .menu_right .button {
 
 .features .left_text h2 {
   color: #2B2730;
-  font-family: Poppins;
   font-size: 56px;
   font-weight: 700;
   line-height: 64px;
@@ -279,7 +269,6 @@ nav .menu_right .button {
 
 .features p {
   color: #2B2730;
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -325,16 +314,13 @@ nav .menu_right .button {
 
 .cta h2 {
   color: #FFF;
-  font-family: Poppins;
   font-size: 56px;
-  font-style: normal;
   font-weight: 700;
   line-height: 64px;
 }
 
 .cta p {
   color: #FFF;
-  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -349,7 +335,6 @@ nav .menu_right .button {
   border-radius: 32px;
   background: #FFB84C;
   color: #2B2730;
-  font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;

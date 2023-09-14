@@ -1,25 +1,29 @@
 
+$black: #2B2730;
+
 body {
     padding: 32px 100px 100px 100px;
     margin: auto;
     background: linear-gradient(to bottom, 
-                                white 0%, /* 0pxから白 */
-                                white 800px, /* 904pxまで白 */
-                                #2B2730 800px, /* 905pxから黒 */
-                                #2B2730 2477px, /* 1577pxまで黒 */
-                                white 2477px /* 1578pxから白 */
+                                white 0%,
+                                white 800px,
+                                $black 800px,
+                                $black 2477px,
+                                white 2477px
                                 );
+    font-family: Poppins;
 }
 
 a {
     text-decoration: none;
     &:hover {
-        opacity: 0.6;
+        opacity: 0.7;
     }
 }
 
 nav {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     .menu_left {
@@ -35,10 +39,8 @@ nav {
             align-items: center;
             gap: 24px;
             a {
-                color: #2B2730;
-                font-family: Poppins;
+                color: $black;
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 500;
                 line-height: normal;
             }
@@ -50,10 +52,8 @@ nav {
         align-items: center;
         gap: 20px;
         a {
-            color: #2B2730;
-            font-family: Poppins;
+            color: $black;
             font-size: 16px;
-            font-style: normal;
             font-weight: 500;
             line-height: normal;
         }
@@ -64,9 +64,8 @@ nav {
             align-items: center;
             gap: 10px;
             border-radius: 100px;
-            background: #2B2730;
+            background: $black;
             color: #FFF;
-            font-family: Poppins;
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
@@ -77,18 +76,14 @@ nav {
 
 
 .banner {
-    // width: 1220px;
+    width: 100%;
     height: 1049.654px;
     .row {
-        width: 1203px;
-        // height: 258px;
         flex-shrink: 0;
         display: flex;
         p {
-            color: #2B2730;
-            font-family: Poppins;
+            color: $black;
             font-size: 72px;
-            font-style: normal;
             font-weight: 700;
             line-height: 80px;
             .highlight {
@@ -131,7 +126,7 @@ nav {
         height: auto;
         flex-shrink: 0;
         border-radius: 32px;
-        border: 16px solid #2B2730;
+        border: 16px solid $black;
         filter: grayscale(100%);
     }
 
@@ -143,13 +138,11 @@ nav {
     align-items: flex-start;
     width: 100%;
     margin-top: 100px;
-    background-color: #2B2730;
+    background-color: $black;
     gap: 116px;
     p {
         color: #FFB84C;
-        font-family: Poppins;
         font-size: 64px;
-        font-style: normal;
         font-weight: 700;
         line-height: 72px; /* 112.5% */
         letter-spacing: -1.6px;
@@ -198,7 +191,6 @@ nav {
             gap: 16px;
             p {
                 color: #FFF;
-                font-family: Poppins;
                 font-size: 32px;
                 font-weight: 500;
                 line-height: 40px; 
@@ -219,8 +211,7 @@ nav {
     gap: 30px;
     h3 {
         align-self: stretch;
-        color: #2B2730;
-        font-family: Poppins;
+        color: $black;
         font-size: 24px;
         font-weight: 700;
         line-height: 32px;
@@ -228,8 +219,7 @@ nav {
     }
     .left_text {
         h2 {
-            color: #2B2730;
-            font-family: Poppins;
+            color: $black;
             font-size: 56px;
             font-weight: 700;
             line-height: 64px; /* 114.286% */
@@ -247,7 +237,7 @@ nav {
             justify-content: center;
             align-items: center;
             border-radius: 32px;
-            background: #2B2730;
+            background: $black;
             color: #FFF;
             font-size: 14px;
             font-weight: 500;
@@ -256,8 +246,7 @@ nav {
     }
 
     p {
-        color: #2B2730;
-        font-family: Poppins;
+        color: $black;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px; /* 150% */
@@ -295,18 +284,15 @@ nav {
     align-items: center;
     gap: 24px;
     border-radius: 32px;
-    background: #2B2730;
+    background: $black;
     h2 {
         color: #FFF;
-        font-family: Poppins;
         font-size: 56px;
-        font-style: normal;
         font-weight: 700;
         line-height: 64px;
     }
     p {
         color: #FFF;
-        font-family: Poppins;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -319,8 +305,7 @@ nav {
         gap: 10px;
         border-radius: 32px;
         background: #FFB84C;
-        color: #2B2730;
-        font-family: Poppins;
+        color: $black;
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
