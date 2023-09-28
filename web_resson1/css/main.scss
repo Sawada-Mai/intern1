@@ -34,9 +34,19 @@
     text-decoration: none;
     &:hover {
       opacity: 0.7;
+      
     }
 }
 
+
+// PC -
+// BODY - Background
+// WIDE
+// SCROLL BAR
+// Transition\
+// SP
+// PX → CALC　vw（）
+// 中央よせ
 
 $black: #2B2730;
 $orange: #FFB84C;
@@ -139,7 +149,7 @@ nav {
             justify-content: center;
             align-items: center;
             gap: 20px;
-            &__link {
+            &--link {
                 @include linkStyles;
                 color: $black;
                 font-size: 16px;
@@ -277,7 +287,7 @@ nav {
             }
             @include sp {
                 img {
-                    width: 328px;
+                    width: vw(328);
                     height: 436.776px;
                 }
             }
