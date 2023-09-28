@@ -48,8 +48,8 @@ body {
                                 white 0%,
                                 white 800px,
                                 $black 800px,
-                                $black 2800px,
-                                white 2800px
+                                $black 2900px,
+                                white 2900px
                                 );
     font-family: Poppins;
     h1 {
@@ -273,7 +273,7 @@ nav {
             gap: 32px;
             width: 100%;
             img {
-                width: 380px;
+                width: 31%;
             }
             @include sp {
                 img {
@@ -397,6 +397,7 @@ nav {
                 font-weight: 400;
                 line-height: 24px;
                 letter-spacing: -0.4px;
+                margin-bottom: 24px;
             }
             .button {
                 display: inline-flex;
@@ -425,9 +426,6 @@ nav {
                     font-size: 32px;
                     line-height: 40px;
                     letter-spacing: -0.8px;
-                }
-                .button {
-                    margin-top: 24px;
                 }
             }
         }
