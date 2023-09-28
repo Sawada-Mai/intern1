@@ -48,8 +48,8 @@ body {
                                 white 0%,
                                 white 800px,
                                 $black 800px,
-                                $black 2360px,
-                                white 2360px
+                                $black 2800px,
+                                white 2800px
                                 );
     font-family: Poppins;
     h1 {
@@ -273,7 +273,7 @@ nav {
             gap: 32px;
             width: 100%;
             img {
-                width: 392px;
+                width: 380px;
             }
             @include sp {
                 img {

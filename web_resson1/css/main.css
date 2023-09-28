@@ -2,7 +2,7 @@
 body {
   padding: 32px 100px 100px 100px;
   margin: auto;
-  background: linear-gradient(to bottom, white 0%, white 800px, #2B2730 800px, #2B2730 2360px, white 2360px);
+  background: linear-gradient(to bottom, white 0%, white 800px, #2B2730 800px, #2B2730 2800px, white 2800px);
   font-family: Poppins;
 }
 
@@ -261,7 +261,7 @@ nav .menu__right__button:hover {
 }
 
 #content .team__top img {
-  width: 392px;
+  width: 380px;
 }
 
 @media only screen and (max-width: 768px) {
