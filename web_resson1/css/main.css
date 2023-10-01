@@ -88,6 +88,8 @@ nav .menu__left__link {
 
 nav .menu__left__link a {
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.7s;
   color: #2B2730;
   font-size: 16px;
   font-weight: 500;
@@ -106,6 +108,8 @@ nav .menu__right {
 
 nav .menu__right--link {
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.7s;
   color: #2B2730;
   font-size: 16px;
   font-weight: 500;
@@ -117,6 +121,8 @@ nav .menu__right--link:hover {
 
 nav .menu__right__button {
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.7s;
   display: flex;
   padding: 16px 32px;
   justify-content: center;
@@ -334,6 +340,8 @@ nav .menu__right__button:hover {
 
 #content .team__bottom a {
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.7s;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -657,6 +665,8 @@ footer .row .theme ul li {
 
 footer .row .theme ul li a {
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.7s;
   color: #2B2730;
 }
 
