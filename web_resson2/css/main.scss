@@ -14,13 +14,8 @@
         @content;
     }
 }
-@mixin team1 {
-    @media only screen and (max-width: 1440px) and (min-width: 1050px) {
-        @content;
-    }
-}
-@mixin team2 {
-    @media only screen and (max-width: 930px) and (min-width: 769px) {
+@mixin team {
+    @media only screen and (max-width: 1440px) and (min-width: 769px) {
         @content;
     }
 }
@@ -398,7 +393,7 @@ body {
         flex-wrap: wrap;
         gap: 32px;
         img {
-            width: pcvw(392);
+            width: pcvw(380);
             @include sp {
                 @include column;
                 width: vw(328);
@@ -406,7 +401,7 @@ body {
                 gap: 0px;
             }
         }
-        @include team1{
+        @include team{
             @include column;
             gap: 0px;
             img {
@@ -420,25 +415,6 @@ body {
                 margin-left: auto;
                 margin-right: tbvw(50);
                 margin-top: tbvw(-40)
-            }
-            img:last-child {
-                margin-top: tbvw(-40);
-            }
-        }
-        @include team2{
-            @include column;
-            gap: 0px;
-            img {
-                width:  tbvw(285.8);
-            }
-            img:nth-child(odd) {
-                margin-right: auto;
-                margin-left: tbvw(40);
-            }
-            img:nth-child(even) {
-                margin-left: auto;
-                margin-right: tbvw(40);
-                margin-top: tbvw(-40);
             }
             img:last-child {
                 margin-top: tbvw(-40);
@@ -945,7 +921,7 @@ body {
         transform: translateY(0);
     }
 }
-    /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
-    .fadeUpTrigger{
-        opacity: 0;
-    }
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.fadeUpTrigger{
+    opacity: 0;
+}
