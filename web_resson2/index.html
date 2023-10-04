@@ -8,20 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="menu">
-        <div class="menu__left">
-            <img src="./img/logo.jpg" alt="logo">
-            <div class="menu__left__link">
+    <header class="header">
+        <img src="./img/logo.jpg" alt="logo" class="header__logo">
+        <nav class="nav" id="js-nav">
+            <div class="nav__left">
                 <a href="###">Explore</a>
                 <a href="###">Company</a>
                 <a href="###">Support</a>
             </div>
-        </div>
-        <!-- <div class="menu__right">
-            <a href="###" class="menu__right__link">Become a member</a>
-            <a class="menu__right__button">Sign in</a>
-        </div> -->
-    </nav>
+            <div class="nav__right">
+                <a href="###" class="nav__right__link">Become a member</a>
+                <a class="nav__right__button">Sign in</a>
+            </div>
+        </nav>
+        <img src="./img/menu-3.png" alt="openbutton" class="header__openbtn" id="js-hamburger">
+    </header>
 
     <section class="banner">
         <div class="banner__top">
@@ -43,7 +44,7 @@
     </section>
 
     <div class="screen">
-        <img src="./img/img.png" alt="app_screen" class="screen--image">
+        <img src="./img/img.png" alt="app_screen" class="screen--image fadeUpTrigger">
     </div>
 
     <section class="team">
@@ -52,9 +53,9 @@
             knowledge and insight.
         </h2>
         <div class="team__images">
-            <img src="./img/img-card1.png" alt="man1" class="team__images--first">
-            <img src="./img/img-card2.png" alt="woman1" class="team__images--second">
-            <img src="./img/img-card3.png" alt="woman2" class="team__images--third">
+            <img src="./img/img-card1.png" alt="man1" class="team__images--first fadeUpTrigger">
+            <img src="./img/img-card2.png" alt="woman1" class="team__images--second fadeUpTrigger">
+            <img src="./img/img-card3.png" alt="woman2" class="team__images--third fadeUpTrigger">
         </div>
         <div class="team__status">
             <ul class="status">
@@ -183,5 +184,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

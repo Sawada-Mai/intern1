@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Poppins;
   color: #2B2730;
@@ -5,40 +6,77 @@ body {
   scrollbar-color: transparent transparent;
 }
 
-.menu {
+.header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: calc(1240 * (100vw / 1440));
-  margin: 32px calc(100 * (100vw / 1440)) 117px calc(100 * (100vw / 1440));
+  margin: calc(32 * (100vw / 1440)) calc(100 * (100vw / 1440)) calc(117 * (100vw / 1440)) calc(100 * (100vw / 1440));
+  gap: calc(40 * (100vw / 1440));
 }
 
-@media only screen and (max-width: 768px) {
-  .menu {
-    margin: calc(24 * (100vw / 360)) calc(16 * (100vw / 360)) calc(56 * (100vw / 360)) calc(16 * (100vw / 360));
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .header {
+    justify-content: space-between;
   }
 }
 
-.menu__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+@media only screen and (max-width: 1050px) and (min-width: 769px) {
+  .header {
+    justify-content: space-between;
+  }
 }
 
-.menu__left img {
+@media only screen and (max-width: 768px) {
+  .header {
+    margin: calc(24 * (100vw / 360)) calc(16 * (100vw / 360)) calc(56 * (100vw / 360)) calc(16 * (100vw / 360));
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
   width: calc(96 * (100vw / 1440));
-  height: calc(32 * (100vw / 1440));
+  height: auto;
 }
 
-.menu__left__link {
+@media only screen and (max-width: 768px) {
+  .header__logo {
+    width: calc(65.335 * (100vw / 360));
+    height: auto;
+  }
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .header .nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .header .nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 769px) {
+  .header .nav {
+    display: none;
+  }
+}
+
+.header .nav__left {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
 
-.menu__left__link a {
+.header .nav__left a {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
@@ -47,18 +85,18 @@ body {
   font-weight: 500;
 }
 
-.menu__left__link a:hover {
+.header .nav__left a:hover {
   opacity: 0.7;
 }
 
-.menu__right {
+.header .nav__right {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.menu__right__link {
+.header .nav__right__link {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
@@ -67,11 +105,11 @@ body {
   font-weight: 500;
 }
 
-.menu__right__link:hover {
+.header .nav__right__link:hover {
   opacity: 0.7;
 }
 
-.menu__right__button {
+.header .nav__right__button {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
@@ -88,8 +126,33 @@ body {
   line-height: 20px;
 }
 
-.menu__right__button:hover {
+.header .nav__right__button:hover {
   opacity: 0.7;
+}
+
+.header__openbtn {
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__openbtn {
+    display: block;
+    width: calc(24 * (100vw / 360));
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .header__openbtn {
+    display: block;
+    width: calc(44 * (100vw / 1280));
+  }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 769px) {
+  .header__openbtn {
+    display: block;
+    width: calc(34 * (100vw / 1280));
+  }
 }
 
 .banner {
@@ -1165,4 +1228,28 @@ body {
   .footer__link__theme ul li:not(:last-child) {
     margin-bottom: calc(8 * (100vw / 360));
   }
+}
+
+/* fadeUp */
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.fadeUpTrigger {
+  opacity: 0;
 }

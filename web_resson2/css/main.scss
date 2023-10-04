@@ -69,50 +69,87 @@ body {
     scrollbar-color: transparent transparent;
 }
 
-.menu {
-    @include space-between;
-    width: pcvw(1240);
-    margin: 32px pcvw(100) 117px pcvw(100);
+.header {
+    display: flex;
+    align-items: center;
+    margin: pcvw(32) pcvw(100) pcvw(117) pcvw(100);
+    gap: pcvw(40);
+    @include tab {
+        justify-content: space-between;
+    }
+    @include tab-s {
+        justify-content: space-between;
+    }
     @include sp {
         margin: vw(24) vw(16) vw(56) vw(16);
+        justify-content: space-between;
     }
-    &__left {
-        @include center;
-        gap: 40px;
-        img {
-            width: pcvw(96);
-            height: pcvw(32);
+    &__logo {
+        width: pcvw(96);
+        height: auto;
+        @include sp {
+            width: vw(65.335);
+            height: auto;
         }
-        &__link {
+    }
+    .nav {
+        @include space-between;
+        width: 100%;
+        @include sp {
+            display: none;
+        }
+        @include tab {
+            display: none;
+        }
+        @include tab-s {
+            display: none;
+        }
+        &__left {
             @include center;
             gap: 24px;
-            a {@include linkStyles;
+            a {
+                @include linkStyles;
                 color: $black;
                 font-size: pcvw(16);
                 font-weight: 500;
             }
         }
-    }
-    &__right {
-        @include center;
-        gap: 20px;
-        &__link {
-            @include linkStyles;
-            color: $black;
-            font-size: pcvw(16);
-            font-weight: 500;
-        }
-        &__button {
-            @include linkStyles;
+        &__right {
             @include center;
-            gap: 10px;
-            padding: 16px 32px;
-            border-radius: 100px;
-            background: $black;
-            color: #FFF;
-            font-size: pcvw(14);
-            font-weight: 500;
-            line-height: 20px;
+            gap: 20px;
+            &__link {
+                @include linkStyles;
+                color: $black;
+                font-size: pcvw(16);
+                font-weight: 500;
+            }
+            &__button {
+                @include linkStyles;
+                @include center;
+                gap: 10px;
+                padding: 16px 32px;
+                border-radius: 100px;
+                background: $black;
+                color: #FFF;
+                font-size: pcvw(14);
+                font-weight: 500;
+                line-height: 20px;
+            }
+        }
+    }
+    &__openbtn {
+        height: auto;
+        @include sp {
+            display: block;
+            width: vw(24);
+        }
+        @include tab {
+            display: block;
+            width: tbvw(44);
+        }
+        @include tab-s {
+            display: block;
+            width: tbvw(34);
         }
     }
 }
@@ -818,3 +855,26 @@ body {
         }
     }
 }
+
+/* fadeUp */
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+@keyframes fadeUpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+    .fadeUpTrigger{
+        opacity: 0;
+    }
