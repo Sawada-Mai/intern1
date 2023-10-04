@@ -23,6 +23,9 @@
 @function pcvw($px) {
     @return calc(#{$px} * (100vw / #{1440}));
 }
+@function tbvw($px) {
+    @return calc(#{$px} * (100vw / #{1280}));
+}
 @function vw($px) {
     @return calc(#{$px} * (100vw / #{360}));
 }
@@ -70,6 +73,9 @@ body {
     @include space-between;
     width: pcvw(1240);
     margin: 32px pcvw(100) 117px pcvw(100);
+    @include sp {
+        margin: vw(24) vw(16) vw(56) vw(16);
+    }
     &__left {
         @include center;
         gap: 40px;
@@ -80,8 +86,7 @@ body {
         &__link {
             @include center;
             gap: 24px;
-            a {
-                @include linkStyles;
+            a {@include linkStyles;
                 color: $black;
                 font-size: pcvw(16);
                 font-weight: 500;
@@ -114,6 +119,15 @@ body {
 
 .banner {
     padding: 0px pcvw(120) 0px pcvw(100);
+    @include sp {
+        padding: 0px vw(16) 0px vw(16);
+    }
+    @include tab {
+        padding: 0px tbvw(106) 0px tbvw(106);
+    }
+    @include tab-s {
+        padding: 0px tbvw(87.5) 0px tbvw(87.5);
+    }
     &__top {
         @include wrap;
         justify-content: space-between;
@@ -124,9 +138,15 @@ body {
             line-height: pcvw(80);
             @include sp {
                 font-size: vw(32);
-                font-style: normal;
-                font-weight: 700;
                 line-height: vw(40);
+            }
+            @include tab {
+                font-size: tbvw(64);
+                line-height: tbvw(70);
+            }
+            @include tab-s {
+                font-size: tbvw(52.5);
+                height: tbvw(58.3);
             }
         }
         &--highlight {
@@ -148,6 +168,14 @@ body {
             width: vw(102);
             height: vw(102);
         }
+        @include tab {
+            width: tbvw(181.3);
+            height: tbvw(181.3);
+        }
+        @include tab-s {
+            width: tbvw(148.8);
+            height: tbvw(148.8);
+        }
         &--inner {
             @include center;
             position: absolute;
@@ -160,12 +188,26 @@ body {
                 width: vw(82);
                 height: vw(82);
             }
+            @include tab {
+                width: tbvw(145.8);
+                height: tbvw(145.8);
+            }
+            @include tab-s {
+                width: tbvw(119.6);
+                height: tbvw(119.6);
+            }
             p {
                 font-size: pcvw(19.68);
                 color: white;
                 text-align: center;
                 @include sp {
                     font-size: vw(9.84);
+                }
+                @include tab {
+                    font-size: tbvw(17.5);
+                }
+                @include tab-s {
+                    font-size: tbvw(14.4);
                 }
             }
         }
@@ -174,6 +216,12 @@ body {
             font-weight: 700;
             @include sp {
                 font-size: vw(19.68);
+            }
+            @include tab {
+                font-size: tbvw(35);
+            }
+            @include tab-s {
+                font-size: tbvw(28.7)
             }
         }
     }
@@ -192,6 +240,12 @@ body {
     @include sp {
         margin-top: vw(24);
     }
+    @include tab {
+        margin-top: tbvw(103.1);
+    }
+    @include tab-s {
+        margin-top: tbvw(84.6);
+    }
     &--image {
         width: pcvw(1204);
         max-width: 1204px;
@@ -205,6 +259,16 @@ body {
             border-radius: vw(8.611);
             border: vw(4.306) solid $black;
         }
+        @include tab {
+            width: tbvw(1070.2);
+            height: auto;
+            border: tbvw(14.2) solid $black;
+        }
+        @include tab-s {
+            width: tbvw(877.9);
+            height: auto;
+            border: tbvw(11.7) solid $black;
+        }
     }
 }
 
@@ -214,6 +278,12 @@ body {
     background-color: $black;
     @include sp {
         padding: vw(64) vw(18) vw(32) vw(14);
+    }
+    @include tab {
+        padding: tbvw(105.2) tbvw(88.9) tbvw(96) tbvw(88.9);
+    }
+    @include tab-s {
+        padding: tbvw(86.3) tbvw(72.9) tbvw(78.8) tbvw(72.9);
     }
     &__heading {
         margin-bottom: pcvw(116);
@@ -227,6 +297,16 @@ body {
             font-weight: 500;
             line-height: vw(40);
             letter-spacing: -0.8px;
+        }
+        @include tab {
+            font-size: tbvw(56.9);
+            font-weight: 600;
+            line-height: tbvw(64);
+        }
+        @include tab-s {
+            font-size: tbvw(46.7);
+            font-weight: 600;
+            line-height: tbvw(52.5);
         }
         &--highlight {
             color: $orange;
@@ -318,16 +398,33 @@ body {
         margin-bottom: pcvw(8);
         @include sp {
             font-size: vw(40);
-            font-weight: 700;
             line-height: vw(48); 
+        }
+        @include tab {
+            font-size: tbvw(56.9);
+            line-height: tbvw(64);
+        }
+        @include tab-s {
+            font-size: tbvw(46.7);
+            line-height: tbvw(52.5);
         }
     }
     &__description {
         font-size: pcvw(32);
+        font-weight: 400;
+        line-height: pcvw(24);
         @include sp {
+            margin: auto;
             font-size: vw(16);
-            font-weight: 400;
             line-height: vw(24);
+        }
+        @include tab {
+            font-size: tbvw(28.4);
+            line-height: tbvw(21.3);
+        }
+        @include tab-s {
+            font-size: tbvw(23.3);
+            line-height: tbvw(17.5);
         }
     }
 }
@@ -341,6 +438,14 @@ body {
         @include wrap;
         padding: vw(32) vw(18) vw(64) vw(14);
         gap: vw(32);
+    }
+    @include tab {
+        @include space-between;
+        gap: tbvw(26.7);
+    }
+    @include tab-s {
+        @include space-between;
+        gap: tbvw(21.9);
     }
     &__text {
         width: pcvw(604);
@@ -357,10 +462,19 @@ body {
             margin-bottom: pcvw(24);
             @include sp {
                 font-size: vw(32);
-                font-weight: 700;
                 line-height: vw(40);
                 letter-spacing: vw(-0.8);
                 margin-bottom: vw(24);
+            }
+            @include tab {
+                font-size: tbvw(49.8);
+                line-height: tbvw(56.9);
+                margin-bottom: tbvw(21.3);
+            }
+            @include tab-s {
+                font-size: tbvw(40.8);
+                line-height: tbvw(46.7);
+                margin-bottom: tbvw(17.5);
             }
         }
         p {
@@ -372,10 +486,19 @@ body {
             margin-bottom: pcvw(24);
             @include sp {
                 font-size: vw(16);
-                font-weight: 400;
                 line-height: vw(24);
                 letter-spacing: vw(-0.4);
                 margin-bottom: vw(24);
+            }
+            @include tab {
+                font-size: tbvw(14.2);
+                line-height: tbvw(21.3);
+                margin-bottom: tbvw(21.3);
+            }
+            @include tab-s {
+                font-size: tbvw(11.7);
+                line-height: tbvw(17.5);
+                margin-bottom: tbvw(17.5);
             }
         }
     }
@@ -397,6 +520,16 @@ body {
             font-size: vw(14);
             line-height: vw(20);
         }
+        @include tab {
+            padding: tbvw(14.2) tbvw(28.4);
+            font-size: tbvw(12.4);
+            line-height: tbvw(17.8);
+        }
+        @include tab-s {
+            padding: tbvw(11.7) tbvw(23.3);
+            font-size: tbvw(10.2);
+            line-height: tbvw(14.6);
+        }
     }
 }
 
@@ -406,6 +539,9 @@ body {
     @include sp {
         gap: vw(32);
     }
+    @include tab {
+        gap: tbvw(32);
+    }
     &__row {
         display: flex;
         align-items: flex-start;
@@ -413,6 +549,9 @@ body {
         @include sp {
             @include column;
             gap: vw(32);
+        }
+        @include tab {
+            gap: tbvw(32);
         }
     }
     &__col {
@@ -426,11 +565,27 @@ body {
             width: 100%;
             height: auto;
         }
+        @include tab {
+            width: tbvw(254.2);
+            height: tbvw(248.9);
+        }
+        @include tab-s {
+            width: tbvw(208.5);
+            height: tbvw(204.2);
+        }
         img {
             width: pcvw(128);
             height: pcvw(128);
             @include sp {
                 width: vw(96);
+                height: auto;
+            }
+            @include tab {
+                width: tbvw(113.8);
+                height: auto;
+            }
+            @include tab-s {
+                width: tbvw(93.3);
                 height: auto;
             }
         }
@@ -442,6 +597,14 @@ body {
                 font-size: vw(24);
                 line-height: vw(32); 
             }
+            @include tab {
+                font-size: tbvw(21.3);
+                line-height: tbvw(28.4);
+            }
+            @include tab-s {
+                font-size: tbvw(17.5);
+                line-height: tbvw(23.3);
+            }
         }
         p {
             font-size: pcvw(16);
@@ -452,6 +615,14 @@ body {
                 font-size: vw(16);
                 line-height: vw(24);
             }
+            @include tab {
+                font-size: tbvw(16);
+                line-height: tbvw(24);
+            }
+            @include tab-s {
+                font-size: tbvw(16);
+                line-height: tbvw(24);
+            }
         }
     }
 }
@@ -459,7 +630,7 @@ body {
 .cta {
     @include center;
     width: pcvw(1240);
-    max-width: 1240px;
+    // max-width: 1240px;
     background-color: $black;
     padding: pcvw(116) 0px;
     flex-direction: column;
@@ -481,6 +652,10 @@ body {
             font-size: vw(32);
             line-height: vw(40);
         }
+        @include tab {
+            font-size: tbvw(49.8);
+            line-height: tbvw(56.9);
+        }
     }
     p {
         color: #FFF;
@@ -493,6 +668,10 @@ body {
             width: vw(253);
             font-size: vw(16);
             line-height: vw(24);
+        }
+        @include tab {
+            font-size: tbvw(14.2);
+            line-height: tbvw(21.3);
         }
     }
     &__button {
@@ -512,6 +691,12 @@ body {
             gap: vw(10);
             font-size: vw(14);
             line-height: vw(20);
+        }
+        @include tab {
+            padding: tbvw(14.2) tbvw(28.4);
+            gap: tbvw(10);
+            font-size: tbvw(12.4);
+            line-height: tbvw(17.8);
         }
     }
 }
@@ -576,6 +761,10 @@ body {
                 width: vw(180);
                 gap: vw(16);
             }
+            @include tab {
+                width: tbvw(160);
+                gap: tbvw(16);
+            }
             ul {
                 list-style: none;
                 li {
@@ -588,6 +777,14 @@ body {
                             font-size: vw(18);
                             line-height: vw(26);
                         }
+                        @include tab {
+                            font-size: tbvw(16);
+                            line-height: tbvw(23.1);
+                        }
+                        @include tab-s {
+                            font-size: tbvw(13.1);
+                            line-height: tbvw(19);
+                        }
                     }
                     a {
                         @include linkStyles;
@@ -598,6 +795,14 @@ body {
                         @include sp {
                             font-size: vw(16);
                             line-height: vw(24);
+                        }
+                        @include tab {
+                            font-size: tbvw(14.2);
+                            line-height: tbvw(21.3);
+                        }
+                        @include tab-s {
+                            font-size: tbvw(11.7);
+                            line-height: tbvw(17.5);
                         }
                     }
                 }
