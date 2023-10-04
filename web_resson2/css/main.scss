@@ -14,8 +14,13 @@
         @content;
     }
 }
-@mixin pc {
-    @media only screen and (min-width: 769px) {
+@mixin team1 {
+    @media only screen and (max-width: 1440px) and (min-width: 1050px) {
+        @content;
+    }
+}
+@mixin team2 {
+    @media only screen and (max-width: 930px) and (min-width: 769px) {
         @content;
     }
 }
@@ -69,6 +74,44 @@ body {
     scrollbar-color: transparent transparent;
 }
 
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+	top:0;
+    right: -120%;
+	width:100%;
+    height: 100vh;/*ナビの高さ*/
+	background:#eeeeee;
+	transition: all 0.6s;
+}
+#g-nav.panelactive{
+    /*アクティブクラスがついたら位置を0に*/
+    right: 0;
+}
+#g-nav ul {
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#g-nav li{
+	list-style: none;
+    text-align: center;
+}
+#g-nav li a{
+    @include linkStyles;
+	color: #333;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -106,7 +149,7 @@ body {
         }
         &__left {
             @include center;
-            gap: 24px;
+            gap: pcvw(24);
             a {
                 @include linkStyles;
                 color: $black;
@@ -116,7 +159,7 @@ body {
         }
         &__right {
             @include center;
-            gap: 20px;
+            gap: pcvw(20);
             &__link {
                 @include linkStyles;
                 color: $black;
@@ -126,14 +169,14 @@ body {
             &__button {
                 @include linkStyles;
                 @include center;
-                gap: 10px;
-                padding: 16px 32px;
-                border-radius: 100px;
+                gap: pcvw(10);
+                padding: pcvw(16) pcvw(32);
+                border-radius: pcvw(100);
                 background: $black;
                 color: #FFF;
                 font-size: pcvw(14);
                 font-weight: 500;
-                line-height: 20px;
+                line-height: pcvw(20);
             }
         }
     }
@@ -357,22 +400,50 @@ body {
         img {
             width: pcvw(392);
             @include sp {
+                @include column;
                 width: vw(328);
                 height: auto;
+                gap: 0px;
             }
         }
-        // @media (max-width: 1300px) {
-        //     @include column;
-        //     gap: 0px;
-        //     img:nth-child(odd) {
-        //         margin-right: auto;
-        //         margin-left: 50px;
-        //     }
-        //     img:nth-child(even) {
-        //         margin-left: auto;
-        //         margin-right: 50px
-        //     }
-        // }
+        @include team1{
+            @include column;
+            gap: 0px;
+            img {
+                width: tbvw(348.4);
+            }
+            img:nth-child(odd) {
+                margin-right: auto;
+                margin-left: tbvw(50);
+            }
+            img:nth-child(even) {
+                margin-left: auto;
+                margin-right: tbvw(50);
+                margin-top: tbvw(-40)
+            }
+            img:last-child {
+                margin-top: tbvw(-40);
+            }
+        }
+        @include team2{
+            @include column;
+            gap: 0px;
+            img {
+                width:  tbvw(285.8);
+            }
+            img:nth-child(odd) {
+                margin-right: auto;
+                margin-left: tbvw(40);
+            }
+            img:nth-child(even) {
+                margin-left: auto;
+                margin-right: tbvw(40);
+                margin-top: tbvw(-40);
+            }
+            img:last-child {
+                margin-top: tbvw(-40);
+            }
+        }
     }
     &__status {
         @include space-between();
@@ -667,7 +738,7 @@ body {
 .cta {
     @include center;
     width: pcvw(1240);
-    // max-width: 1240px;
+    max-width: 1800px;
     background-color: $black;
     padding: pcvw(116) 0px;
     flex-direction: column;
