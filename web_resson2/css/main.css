@@ -48,6 +48,7 @@ body {
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -206,6 +207,8 @@ body {
 
 .banner {
   padding: 0px calc(120 * (100vw / 1440)) 0px calc(100 * (100vw / 1440));
+  margin: auto;
+  max-width: 1440px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -234,9 +237,9 @@ body {
 
 .banner__top__title {
   color: #2B2730;
-  font-size: calc(72 * (100vw / 1440));
+  font-size: 72px;
   font-weight: 700;
-  line-height: calc(80 * (100vw / 1440));
+  line-height: 80px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -279,8 +282,8 @@ body {
 }
 
 .icon__circle {
-  width: calc(204 * (100vw / 1440));
-  height: calc(204 * (100vw / 1440));
+  width: 204px;
+  height: 204px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -309,8 +312,8 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: calc(164 * (100vw / 1440));
-  height: calc(164 * (100vw / 1440));
+  width: 164px;
+  height: 164px;
   border-radius: 50%;
   background-color: black;
   color: white;
@@ -338,7 +341,7 @@ body {
 }
 
 .icon__circle--inner p {
-  font-size: calc(19.68 * (100vw / 1440));
+  font-size: 19.68px;
   color: white;
   text-align: center;
 }
@@ -362,7 +365,7 @@ body {
 }
 
 .icon__circle--bigger {
-  font-size: calc(39.36 * (100vw / 1440));
+  font-size: 39.36px;
   font-weight: 700;
 }
 
@@ -469,11 +472,13 @@ body {
 }
 
 .team__heading {
+  max-width: 1240px;
+  margin: auto;
   margin-bottom: calc(116 * (100vw / 1440));
   color: white;
-  font-size: calc(64 * (100vw / 1440));
+  font-size: 64px;
   font-weight: 700;
-  line-height: calc(72 * (100vw / 1440));
+  line-height: 72px;
   letter-spacing: calc(-1.6 * (100vw / 1440));
 }
 
@@ -510,13 +515,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1440px;
+  margin: auto;
   margin-bottom: calc(116 * (100vw / 1440));
   flex-wrap: wrap;
   gap: 32px;
 }
 
 .team__images img {
-  width: calc(380 * (100vw / 1440));
+  width: 380px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -558,6 +565,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
+  margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -575,12 +584,12 @@ body {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
-  gap: calc(16 * (100vw / 1440));
+  gap: 16px;
   align-items: flex-end;
   color: #FFF;
-  font-size: calc(32 * (100vw / 1440));
+  font-size: 32px;
   font-weight: 500;
-  line-height: calc(40 * (100vw / 1440));
+  line-height: 40px;
 }
 
 .team__status__link:hover {
@@ -605,8 +614,8 @@ body {
 }
 
 .team__status__link img {
-  width: calc(64 * (100vw / 1440));
-  height: calc(64 * (100vw / 1440));
+  width: 64px;
+  height: 64px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -620,7 +629,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(703 * (100vw / 1440));
+  width: 703px;
   gap: calc(32 * (100vw / 1440));
   color: #FFF;
   list-style: none;
@@ -646,11 +655,11 @@ body {
 }
 
 .status__number {
-  font-size: calc(64 * (100vw / 1440));
+  font-size: 64px;
   color: #FFB84C;
   font-weight: 700;
-  line-height: calc(72 * (100vw / 1440));
-  margin-bottom: calc(8 * (100vw / 1440));
+  line-height: 72px;
+  margin-bottom: 8px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -675,9 +684,9 @@ body {
 }
 
 .status__description {
-  font-size: calc(32 * (100vw / 1440));
+  font-size: 32px;
   font-weight: 400;
-  line-height: calc(24 * (100vw / 1440));
+  line-height: 24px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -703,9 +712,12 @@ body {
 }
 
 .features {
-  padding: calc(116 * (100vw / 1440)) calc(100 * (100vw / 1440)) calc(116 * (100vw / 1440)) calc(100 * (100vw / 1440));
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
+  padding-top: 116px;
+  padding-bottom: 116px;
+  max-width: 1440px;
+  margin: auto;
   gap: calc(30 * (100vw / 1440));
 }
 
@@ -737,7 +749,7 @@ body {
 }
 
 .features__text {
-  width: calc(604 * (100vw / 1440));
+  width: 604px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -747,13 +759,13 @@ body {
 }
 
 .features__text h2 {
-  font-size: calc(56 * (100vw / 1440));
+  font-size: 56px;
   color: #2B2730;
   font-weight: 700;
-  line-height: calc(64 * (100vw / 1440));
-  letter-spacing: calc(-1.4 * (100vw / 1440));
+  line-height: 64px;
+  letter-spacing: -1.4px;
   margin: 0;
-  margin-bottom: calc(24 * (100vw / 1440));
+  margin-bottom: 24px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -782,12 +794,12 @@ body {
 }
 
 .features__text p {
-  font-size: calc(16 * (100vw / 1440));
+  font-size: 16px;
   color: #2B2730;
   font-weight: 400;
-  line-height: calc(24 * (100vw / 1440));
+  line-height: 24px;
   letter-spacing: calc(-0.4 * (100vw / 1440));
-  margin-bottom: calc(24 * (100vw / 1440));
+  margin-bottom: 24px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -864,7 +876,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: calc(32 * (100vw / 1440));
+  gap: 32px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -882,7 +894,7 @@ body {
 .items__row {
   display: flex;
   align-items: flex-start;
-  gap: calc(34 * (100vw / 1440));
+  gap: 34px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -904,8 +916,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: calc(286 * (100vw / 1440));
-  height: calc(280 * (100vw / 1440));
+  width: 286px;
+  height: 280px;
   gap: calc(16 * (100vw / 1440));
 }
 
@@ -935,8 +947,8 @@ body {
 }
 
 .items__col img {
-  width: calc(128 * (100vw / 1440));
-  height: calc(128 * (100vw / 1440));
+  width: 128px;
+  height: 128px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -961,9 +973,9 @@ body {
 }
 
 .items__col h3 {
-  font-size: calc(24 * (100vw / 1440));
+  font-size: 24px;
   font-weight: 700;
-  line-height: calc(32 * (100vw / 1440));
+  line-height: 32px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -988,9 +1000,9 @@ body {
 }
 
 .items__col p {
-  font-size: calc(16 * (100vw / 1440));
+  font-size: 16px;
   font-weight: 400;
-  line-height: calc(24 * (100vw / 1440));
+  line-height: 24px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1019,10 +1031,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(1240 * (100vw / 1440));
+  width: 1240px;
   max-width: 1800px;
   background-color: #2B2730;
-  padding: calc(116 * (100vw / 1440)) 0px;
+  padding: 116px 0px;
   flex-direction: column;
   border-radius: 32px;
   margin: auto;
@@ -1039,7 +1051,7 @@ body {
 
 .cta h2 {
   color: #FFF;
-  font-size: calc(56 * (100vw / 1440));
+  font-size: 56px;
   font-weight: 700;
   line-height: calc(64 * (100vw / 1440));
 }
@@ -1123,8 +1135,8 @@ body {
 
 .footer {
   display: flex;
-  width: calc(1240 * (100vw / 1440));
-  margin: calc(116 * (100vw / 1440)) calc(100 * (100vw / 1440)) calc(116 * (100vw / 1440)) calc(100 * (100vw / 1440));
+  width: 1240px;
+  margin: 116px auto;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -1192,7 +1204,7 @@ body {
 .footer__link {
   display: flex;
   align-items: flex-start;
-  gap: calc(32 * (100vw / 1440));
+  gap: 32px;
   align-self: stretch;
 }
 
@@ -1210,8 +1222,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: calc(180 * (100vw / 1440));
-  gap: calc(16 * (100vw / 1440));
+  width: 180px;
+  gap: 16px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1237,9 +1249,9 @@ body {
 }
 
 .footer__link__theme ul li h3 {
-  font-size: calc(18 * (100vw / 1440));
+  font-size: 18px;
   font-weight: 700;
-  line-height: calc(26 * (100vw / 1440));
+  line-height: 26px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1268,9 +1280,9 @@ body {
   opacity: 1;
   transition: opacity 0.5s;
   color: #2B2730;
-  font-size: calc(16 * (100vw / 1440));
+  font-size: 16px;
   font-weight: 400;
-  line-height: calc(24 * (100vw / 1440));
+  line-height: 24px;
 }
 
 .footer__link__theme ul li a:hover {

@@ -98,13 +98,14 @@ body {
 }
 #g-nav li a{
     @include linkStyles;
-	color: #333;
-	text-decoration: none;
-	padding:10px;
-	display: block;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    padding:10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .header {
@@ -194,6 +195,8 @@ body {
 
 .banner {
     padding: 0px pcvw(120) 0px pcvw(100);
+    margin: auto;
+    max-width: 1440px;
     @include sp {
         padding: 0px vw(16) 0px vw(16);
     }
@@ -208,9 +211,9 @@ body {
         justify-content: space-between;
         &__title {
             color: $black;
-            font-size: pcvw(72);
+            font-size: 72px;
             font-weight: 700;
-            line-height: pcvw(80);
+            line-height: 80px;
             @include sp {
                 font-size: vw(32);
                 line-height: vw(40);
@@ -237,8 +240,8 @@ body {
         margin-top: vw(-36);
     }
     &__circle {
-        width: pcvw(204);
-        height: pcvw(204);
+        width: 204px;
+        height: 204px;
         @include sp {
             width: vw(102);
             height: vw(102);
@@ -254,8 +257,8 @@ body {
         &--inner {
             @include center;
             position: absolute;
-            width: pcvw(164);
-            height: pcvw(164);
+            width: 164px;
+            height: 164px;
             border-radius: 50%;
             background-color: black;
             color: white;
@@ -272,7 +275,7 @@ body {
                 height: tbvw(119.6);
             }
             p {
-                font-size: pcvw(19.68);
+                font-size: 19.68px;
                 color: white;
                 text-align: center;
                 @include sp {
@@ -287,7 +290,7 @@ body {
             }
         }
         &--bigger {
-            font-size: pcvw(39.36);
+            font-size: 39.36px;
             font-weight: 700;
             @include sp {
                 font-size: vw(19.68);
@@ -361,11 +364,13 @@ body {
         padding: tbvw(86.3) tbvw(72.9) tbvw(78.8) tbvw(72.9);
     }
     &__heading {
+        max-width: 1240px;
+        margin: auto;
         margin-bottom: pcvw(116);
         color: white;
-        font-size: pcvw(64);
+        font-size: 64px;
         font-weight: 700;
-        line-height: pcvw(72);
+        line-height: 72px;
         letter-spacing: pcvw(-1.6);
         @include sp {
             font-size: vw(32);
@@ -389,11 +394,13 @@ body {
     }
     &__images {
         @include center;
+        max-width: 1440px;
+        margin: auto;
         margin-bottom: pcvw(116);
         flex-wrap: wrap;
         gap: 32px;
         img {
-            width: pcvw(380);
+            width: 380px;
             @include sp {
                 @include column;
                 width: vw(328);
@@ -423,18 +430,20 @@ body {
     }
     &__status {
         @include space-between();
+        max-width: 1440px;
+        margin: auto;
         @include sp {
             @include column;
         }
         &__link {
             @include center;
             @include linkStyles;
-            gap: pcvw(16);
+            gap: 16px;
             align-items: flex-end;
             color: #FFF;
-            font-size: pcvw(32);
+            font-size: 32px;
             font-weight: 500;
-            line-height: pcvw(40);
+            line-height: 40px;
             @include sp {
                 @include center;
                 margin-top: vw(40);
@@ -448,8 +457,8 @@ body {
                 }
             }
             img {
-                width: pcvw(64);
-                height: pcvw(64);
+                width: 64px;
+                height: 64px;
                 @include sp {
                     width: vw(32);
                     height: vw(32);
@@ -461,7 +470,7 @@ body {
 
 .status {
     @include space-between;
-    width: pcvw(703);
+    width: 703px;
     gap: pcvw(32);
     color: #FFF;
     list-style: none;
@@ -475,11 +484,11 @@ body {
         gap: pcvw(8);
     }
     &__number{
-        font-size: pcvw(64);
+        font-size: 64px;
         color: $orange;
         font-weight: 700;
-        line-height: pcvw(72);
-        margin-bottom: pcvw(8);
+        line-height: 72px;
+        margin-bottom: 8px;
         @include sp {
             font-size: vw(40);
             line-height: vw(48); 
@@ -494,9 +503,9 @@ body {
         }
     }
     &__description {
-        font-size: pcvw(32);
+        font-size: 32px;
         font-weight: 400;
-        line-height: pcvw(24);
+        line-height: 24px;
         @include sp {
             margin: auto;
             font-size: vw(16);
@@ -514,9 +523,12 @@ body {
 }
 
 .features {
-    padding: pcvw(116) pcvw(100) pcvw(116) pcvw(100);
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
+    padding-top : 116px;
+    padding-bottom: 116px;
+    max-width: 1440px;
+    margin: auto;
     gap: pcvw(30);
     @include sp {
         @include wrap;
@@ -532,18 +544,18 @@ body {
         gap: tbvw(21.9);
     }
     &__text {
-        width: pcvw(604);
+        width: 604px;
         @include sp {
             width: 100%;
         }
         h2 {
-            font-size: pcvw(56);
+            font-size: 56px;
             color: $black;
             font-weight: 700;
-            line-height: pcvw(64);
-            letter-spacing: pcvw(-1.4);
+            line-height: 64px;
+            letter-spacing: -1.4px;
             margin: 0;
-            margin-bottom: pcvw(24);
+            margin-bottom: 24px;
             @include sp {
                 font-size: vw(32);
                 line-height: vw(40);
@@ -562,12 +574,12 @@ body {
             }
         }
         p {
-            font-size: pcvw(16);
+            font-size: 16px;
             color: $black;
             font-weight: 400;
-            line-height: pcvw(24);
+            line-height: 24px;
             letter-spacing: pcvw(-0.4);
-            margin-bottom: pcvw(24);
+            margin-bottom: 24px;
             @include sp {
                 font-size: vw(16);
                 line-height: vw(24);
@@ -619,7 +631,7 @@ body {
 
 .items {
     @include column;
-    gap: pcvw(32);
+    gap: 32px;
     @include sp {
         gap: vw(32);
     }
@@ -629,7 +641,7 @@ body {
     &__row {
         display: flex;
         align-items: flex-start;
-        gap: pcvw(34);
+        gap: 34px;
         @include sp {
             @include column;
             gap: vw(32);
@@ -640,8 +652,8 @@ body {
     }
     &__col {
         @include column;
-        width: pcvw(286);
-        height: pcvw(280);
+        width: 286px;
+        height: 280px;
         gap: pcvw(16);
         @include sp {
             @include center;
@@ -658,8 +670,8 @@ body {
             height: tbvw(204.2);
         }
         img {
-            width: pcvw(128);
-            height: pcvw(128);
+            width: 128px;
+            height: 128px;
             @include sp {
                 width: vw(96);
                 height: auto;
@@ -674,9 +686,9 @@ body {
             }
         }
         h3 {
-            font-size: pcvw(24);
+            font-size: 24px;
             font-weight: 700;
-            line-height: pcvw(32);
+            line-height: 32px;
             @include sp {
                 font-size: vw(24);
                 line-height: vw(32); 
@@ -691,9 +703,9 @@ body {
             }
         }
         p {
-            font-size: pcvw(16);
+            font-size: 16px;
             font-weight: 400;
-            line-height: pcvw(24);
+            line-height: 24px;
             @include sp {
                 text-align: center;
                 font-size: vw(16);
@@ -713,10 +725,10 @@ body {
 
 .cta {
     @include center;
-    width: pcvw(1240);
+    width: 1240px;
     max-width: 1800px;
     background-color: $black;
-    padding: pcvw(116) 0px;
+    padding: 116px 0px;
     flex-direction: column;
     border-radius: 32px;
     margin: auto;
@@ -728,7 +740,7 @@ body {
     }
     h2 {
         color: #FFF;
-        font-size: pcvw(56);
+        font-size: 56px;
         font-weight: 700;
         line-height: pcvw(64);
         @include sp {
@@ -787,8 +799,8 @@ body {
 
 .footer {
     display: flex;
-    width: pcvw(1240);
-    margin: pcvw(116) pcvw(100) pcvw(116) pcvw(100);
+    width: 1240px;
+    margin: 116px auto;
     justify-content: space-between;
     align-items: flex-start;
     @include sp {
@@ -830,7 +842,7 @@ body {
     &__link {
         display: flex;
         align-items: flex-start;
-        gap: pcvw(32);
+        gap: 32px;
         align-self: stretch;
         @include sp {
             @include column;
@@ -839,8 +851,8 @@ body {
         }
         &__theme {
             @include column;
-            width: pcvw(180);
-            gap: pcvw(16);
+            width: 180px;
+            gap: 16px;
             @include sp {
                 width: vw(180);
                 gap: vw(16);
@@ -854,9 +866,9 @@ body {
                 li {
                     text-align: left;
                     h3 {
-                        font-size: pcvw(18);
+                        font-size: 18px;
                         font-weight: 700;
-                        line-height: pcvw(26);
+                        line-height: 26px;
                         @include sp {
                             font-size: vw(18);
                             line-height: vw(26);
@@ -873,9 +885,9 @@ body {
                     a {
                         @include linkStyles;
                         color: $black;
-                        font-size: pcvw(16);
+                        font-size: 16px;
                         font-weight: 400;
-                        line-height: pcvw(24);
+                        line-height: 24px;
                         @include sp {
                             font-size: vw(16);
                             line-height: vw(24);
