@@ -813,7 +813,7 @@ body {
         gap: vw(32);
     }
     @include tab {
-        width: tbvw(1240);
+        width: tbvw(1100);
     }
     &__icons {
         @include column;
@@ -863,6 +863,7 @@ body {
             gap: 16px;
             @include sp {
                 width: vw(180);
+                margin-left: vw(10);
                 gap: vw(16);
             }
             @include tab {

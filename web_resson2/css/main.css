@@ -1158,7 +1158,7 @@ body {
 
 @media only screen and (max-width: 1280px) and (min-width: 769px) {
   .footer {
-    width: calc(1240 * (100vw / 1280));
+    width: calc(1100 * (100vw / 1280));
   }
 }
 
@@ -1241,6 +1241,7 @@ body {
 @media only screen and (max-width: 768px) {
   .footer__link__theme {
     width: calc(180 * (100vw / 360));
+    margin-left: calc(10 * (100vw / 360));
     gap: calc(16 * (100vw / 360));
   }
 }
