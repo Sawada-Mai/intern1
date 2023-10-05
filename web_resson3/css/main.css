@@ -1,0 +1,46 @@
+.top {
+  padding: 80px 108px;
+  background: #000;
+  text-align: center;
+}
+
+.top__text {
+  width: 574px;
+  margin: 0px 325px 32px 325px;
+}
+
+.top__text h1 {
+  margin: 0px 44.91px 16px 45.09px;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.top__text p {
+  margin: 0px 8.91px 33px 9.09px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.top__text__link {
+  margin: 0px 111.66px 0px 111.88px;
+  align-items: center;
+  gap: 28px;
+}
+
+.top img {
+  width: 1224px;
+  height: 486px;
+  max-width: 1224px;
+}
+
+.features {
+  display: flex;
+  width: 1440px;
+  padding: 80px 108px;
+  justify-content: center;
+  align-items: center;
+}
