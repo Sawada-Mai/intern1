@@ -194,9 +194,8 @@ body {
 }
 
 .banner {
-    padding: 0px pcvw(120) 0px pcvw(100);
     margin: auto;
-    max-width: 1440px;
+    max-width: 1240px;
     @include sp {
         padding: 0px vw(16) 0px vw(16);
     }
@@ -206,30 +205,28 @@ body {
     @include tab-s {
         padding: 0px tbvw(87.5) 0px tbvw(87.5);
     }
-    &__top {
-        @include wrap;
-        justify-content: space-between;
-        &__title {
-            color: $black;
-            font-size: 72px;
-            font-weight: 700;
-            line-height: 80px;
-            @include sp {
-                font-size: vw(32);
-                line-height: vw(40);
-            }
-            @include tab {
-                font-size: tbvw(64);
-                line-height: tbvw(70);
-            }
-            @include tab-s {
-                font-size: tbvw(52.5);
-                height: tbvw(58.3);
-            }
+    @include wrap;
+    justify-content: space-between;
+    &__title {
+        color: $black;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 80px;
+        @include sp {
+            font-size: vw(32);
+            line-height: vw(40);
         }
-        &--highlight {
-            color: $orange;
+        @include tab {
+            font-size: tbvw(64);
+            line-height: tbvw(70);
         }
+        @include tab-s {
+            font-size: tbvw(52.5);
+            height: tbvw(58.3);
+        }
+    }
+    &--highlight {
+        color: $orange;
     }
 }
 .icon{
@@ -351,7 +348,7 @@ body {
 }
 
 .team {
-    padding: pcvw(118.35) pcvw(100) pcvw(108) pcvw(100);
+    padding: 118.35px 100px 108px 100px;
     margin-top: -1px;
     background-color: $black;
     @include sp {
@@ -394,7 +391,7 @@ body {
     }
     &__images {
         @include center;
-        max-width: 1440px;
+        max-width: 1240px;
         margin: auto;
         margin-bottom: pcvw(116);
         flex-wrap: wrap;
@@ -404,6 +401,7 @@ body {
             @include sp {
                 @include column;
                 width: vw(328);
+                max-width: 328px;
                 height: auto;
                 gap: 0px;
             }
@@ -430,7 +428,7 @@ body {
     }
     &__status {
         @include space-between();
-        max-width: 1440px;
+        max-width: 1240px;
         margin: auto;
         @include sp {
             @include column;
@@ -478,6 +476,9 @@ body {
         @include column;
         @include center;
         width: 100%;
+    }
+    @include tab {
+        width: tbvw(600);
     }
     &__pair{
         @include column;
@@ -527,7 +528,7 @@ body {
     align-items: flex-start;
     padding-top : 116px;
     padding-bottom: 116px;
-    max-width: 1440px;
+    max-width: 1240px;
     margin: auto;
     gap: pcvw(30);
     @include sp {
@@ -536,11 +537,11 @@ body {
         gap: vw(32);
     }
     @include tab {
-        @include space-between;
+        padding: tbvw(116) tbvw(88) tbvw(116) tbvw(88);
         gap: tbvw(26.7);
     }
     @include tab-s {
-        @include space-between;
+        padding: tbvw(116) tbvw(80) tbvw(116) tbvw(88);
         gap: tbvw(21.9);
     }
     &__text {
@@ -726,7 +727,7 @@ body {
 .cta {
     @include center;
     width: 1240px;
-    max-width: 1800px;
+    max-width: 1240px;
     background-color: $black;
     padding: 116px 0px;
     flex-direction: column;
@@ -737,6 +738,10 @@ body {
         width: vw(328);
         padding: vw(24) vw(16);
         gap: vw(16);
+    }
+    @include tab {
+        width: tbvw(1100);
+        padding: tbvw(110) 0px;
     }
     h2 {
         color: #FFF;
@@ -799,13 +804,16 @@ body {
 
 .footer {
     display: flex;
-    width: 1240px;
+    max-width: 1240px;
     margin: 116px auto;
     justify-content: space-between;
     align-items: flex-start;
     @include sp {
         @include column;
         gap: vw(32);
+    }
+    @include tab {
+        width: tbvw(1240);
     }
     &__icons {
         @include column;

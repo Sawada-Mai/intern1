@@ -206,9 +206,11 @@ body {
 }
 
 .banner {
-  padding: 0px calc(120 * (100vw / 1440)) 0px calc(100 * (100vw / 1440));
   margin: auto;
-  max-width: 1440px;
+  max-width: 1240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
@@ -229,13 +231,7 @@ body {
   }
 }
 
-.banner__top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.banner__top__title {
+.banner__title {
   color: #2B2730;
   font-size: 72px;
   font-weight: 700;
@@ -243,27 +239,27 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .banner__top__title {
+  .banner__title {
     font-size: calc(32 * (100vw / 360));
     line-height: calc(40 * (100vw / 360));
   }
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 769px) {
-  .banner__top__title {
+  .banner__title {
     font-size: calc(64 * (100vw / 1280));
     line-height: calc(70 * (100vw / 1280));
   }
 }
 
 @media only screen and (max-width: 1050px) and (min-width: 769px) {
-  .banner__top__title {
+  .banner__title {
     font-size: calc(52.5 * (100vw / 1280));
     height: calc(58.3 * (100vw / 1280));
   }
 }
 
-.banner__top--highlight {
+.banner--highlight {
   color: #FFB84C;
 }
 
@@ -448,7 +444,7 @@ body {
 }
 
 .team {
-  padding: calc(118.35 * (100vw / 1440)) calc(100 * (100vw / 1440)) calc(108 * (100vw / 1440)) calc(100 * (100vw / 1440));
+  padding: 118.35px 100px 108px 100px;
   margin-top: -1px;
   background-color: #2B2730;
 }
@@ -515,7 +511,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
+  max-width: 1240px;
   margin: auto;
   margin-bottom: calc(116 * (100vw / 1440));
   flex-wrap: wrap;
@@ -532,6 +528,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: calc(328 * (100vw / 360));
+    max-width: 328px;
     height: auto;
     gap: 0px;
   }
@@ -565,7 +562,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
+  max-width: 1240px;
   margin: auto;
 }
 
@@ -647,6 +644,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .status {
+    width: calc(600 * (100vw / 1280));
+  }
+}
+
 .status__pair {
   display: flex;
   flex-direction: column;
@@ -716,7 +719,7 @@ body {
   align-items: flex-start;
   padding-top: 116px;
   padding-bottom: 116px;
-  max-width: 1440px;
+  max-width: 1240px;
   margin: auto;
   gap: calc(30 * (100vw / 1440));
 }
@@ -732,18 +735,14 @@ body {
 
 @media only screen and (max-width: 1280px) and (min-width: 769px) {
   .features {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: calc(116 * (100vw / 1280)) calc(88 * (100vw / 1280)) calc(116 * (100vw / 1280)) calc(88 * (100vw / 1280));
     gap: calc(26.7 * (100vw / 1280));
   }
 }
 
 @media only screen and (max-width: 1050px) and (min-width: 769px) {
   .features {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: calc(116 * (100vw / 1280)) calc(80 * (100vw / 1280)) calc(116 * (100vw / 1280)) calc(88 * (100vw / 1280));
     gap: calc(21.9 * (100vw / 1280));
   }
 }
@@ -1032,7 +1031,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 1240px;
-  max-width: 1800px;
+  max-width: 1240px;
   background-color: #2B2730;
   padding: 116px 0px;
   flex-direction: column;
@@ -1046,6 +1045,13 @@ body {
     width: calc(328 * (100vw / 360));
     padding: calc(24 * (100vw / 360)) calc(16 * (100vw / 360));
     gap: calc(16 * (100vw / 360));
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .cta {
+    width: calc(1100 * (100vw / 1280));
+    padding: calc(110 * (100vw / 1280)) 0px;
   }
 }
 
@@ -1135,7 +1141,7 @@ body {
 
 .footer {
   display: flex;
-  width: 1240px;
+  max-width: 1240px;
   margin: 116px auto;
   justify-content: space-between;
   align-items: flex-start;
@@ -1147,6 +1153,12 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: calc(32 * (100vw / 360));
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .footer {
+    width: calc(1240 * (100vw / 1280));
   }
 }
 
