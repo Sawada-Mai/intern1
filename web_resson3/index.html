@@ -8,16 +8,20 @@
     <title>Visual Product</title>
 </head>
 <body>
-    <header class="header">
-        <div>
-            <h3>Visual Product</h3>
-        </div>
-        <div>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
-            <a href="">Get started</a>
+    <header>
+        <div class="banner">
+            <div class="banner__logo">
+                <h3>Visual Product</h3>
+            </div>
+            <div class="banner__nav">
+                <div class="banner__nav__link">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                </div>
+                <a href="" class="banner__nav__button">Get started</a>
+            </div>
         </div>
     </header>
 
@@ -31,26 +35,29 @@
                 In today's digital age, effective product management is crucial for the</br>
                 success of any software-as-a-service (SaaS) company.
             </p>
-            <div class="top__link">
-                <a href="###"><span>Get started</span></a>
-                <a href="###"><span>Talk to sales</span></a>
+            <div class="top__text__link">
+                <a href="###" class="top__text__link--button1"><span>Get started</span></a>
+                <a href="###" class="top__text__link--button2"><span>Talk to sales</span></a>
             </div>
         </div>
         <img src="./img/women.jpg" alt="">
     </section>
 
     <section class="company">
-        <div><img src="./img/HubSpot.svg" alt="HubSpot"></div>
-        <div><img src="./img/INTERCOM.svg" alt="INTERCOM"></div>
-        <div><img src="./img/Google.svg" alt="Google"></div>
-        <div><img src="./img/Microsoft.svg" alt="Microsoft"></div>
-        <div><img src="./img/INTERCOM.svg" alt="INTERCOM"></div>
-        <div><img src="./img/Microsoft.svg" alt="Microsoft"></div>
-        <div><img src="./img/HubSpot.svg" alt="HubSpot"></div>
+        <div class="company__container">
+            <div class="company__container__box"><img src="./img/HubSpot.svg" alt="HubSpot"></div>
+            <div class="company__container__box"><img src="./img/INTERCOM.svg" alt="INTERCOM"></div>
+            <div class="company__container__box"><img src="./img/Google.svg" alt="Google"></div>
+            <div class="company__container__box"><img src="./img/Microsoft.svg" alt="Microsoft"></div>
+            <div class="company__container__box"><img src="./img/INTERCOM.svg" alt="INTERCOM"></div>
+            <div class="company__container__box"><img src="./img/Microsoft.svg" alt="Microsoft"></div>
+            <div class="company__container__box"><img src="./img/HubSpot.svg" alt="HubSpot"></div>
+        </div>
     </section>
 
     <section class="features">
-        <div>
+        <div class="features__box">
+            <img src="./img/Mobile_app.svg" alt="">
             <h3>Mobile app</h3>
             <p>
                 Lorem ipsum dolor sit amet consecte turole
@@ -58,7 +65,8 @@
                 volutpat est velitolm.
             </p>
         </div>
-        <div>
+        <div class="features__box">
+            <img src="./img/Desktop_app.svg" alt="">
             <h3>Desktop app</h3>
             <p>
                 Lorem ipsum dolor sit amet consecte turole
@@ -66,7 +74,8 @@
                 volutpat est velitolm.
             </p>
         </div>
-        <div>
+        <div class="features__box">
+            <img src="./img/Multiple_users.svg" alt="">
             <h3>Multiple users</h3>
             <p>
                 Lorem ipsum dolor sit amet consecte turole
@@ -76,48 +85,33 @@
         </div>
     </section>
 
-    <section class="service-1">
-        <div class="service-1__left">
-            <h2>
-                A dedicated team to grow
-                your company
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
-                aliquam sit nullam neque ultrices.
-            </p>
-            <div>
-                <a href="###"><span>Get started</span></a>
-                <a href="###"><span>Talk to sales</span></a>
+    <section class="inquiry">
+        <div class="inquiry__box">
+            <div class="inquiry__box__text">
+                <h2>
+                    A dedicated team to grow
+                    your company
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
+                    aliquam sit nullam neque ultrices.
+                </p>
+                <div class="inquiry__box__text__link">
+                    <a href="###" class="inquiry__box__text__link--button1"><span>Get started</span></a>
+                    <a href="###" class="inquiry__box__text__link--button2"><span>Talk to sales</span></a>
+                </div>
             </div>
-        </div>
-        <div class="service-1__right">
-            <img src="" alt="">
-        </div>
-    </section>
-
-    <section class="service-2">
-        <div class="service-2__left">
-            <img src="" alt="">
-        </div>
-        <div class="service-2__right">
-            <h2>
-                A dedicated team to grow
-                your company
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
-                aliquam sit nullam neque ultrices.
-            </p>
-            <div>
-                <a href="###"><span>Get started</span></a>
-                <a href="###"><span>Talk to sales</span></a>
+            <div class="inquiry__box__img">
+                <img src="./img/inquiry.svg" alt="">
             </div>
         </div>
     </section>
 
-    <section class="service-1">
-        <div class="service-1__left">
+    <section class="analyses">
+        <div class="analyses__img">
+            <img src="./img/analyses.svg" alt="">
+        </div>
+        <div class="analyses__text">
             <h2>
                 A dedicated team to grow
                 your company
@@ -126,38 +120,40 @@
                 Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
                 aliquam sit nullam neque ultrices.
             </p>
-            <div>
-                <a href="###"><span>Get started</span></a>
-                <a href="###"><span>Talk to sales</span></a>
-            </div>
-        </div>
-        <div class="service-1__right">
-            <img src="" alt="">
-        </div>
-    </section>
-
-    <section class="service-2">
-        <div class="service-2__left">
-            <img src="" alt="">
-        </div>
-        <div class="service-2__right">
-            <h2>
-                A dedicated team to grow
-                your company
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
-                aliquam sit nullam neque ultrices.
-            </p>
-            <div>
-                <a href="###"><span>Get started</span></a>
-                <a href="###"><span>Talk to sales</span></a>
+            <div class="analyses__text__link">
+                <a href="###" class="analyses__text__link--button1"><span>Get started</span></a>
+                <a href="###" class="analyses__text__link--button2"><span>Talk to sales</span></a>
             </div>
         </div>
     </section>
 
-    <section class="service-3">
-        <div class="service-1__left">
+    <section class="inquiry2">
+        <div class="inquiry2__box">
+            <div class="inquiry2__box__text">
+                <h2>
+                    A dedicated team to grow
+                    your company
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
+                    aliquam sit nullam neque ultrices.
+                </p>
+                <div class="inquiry2__box__text__link">
+                    <a href="###" class="inquiry2__box__text__link--button1"><span>Get started</span></a>
+                    <a href="###" class="inquiry2__box__text__link--button2"><span>Talk to sales</span></a>
+                </div>
+            </div>
+            <div class="inquiry2__box__img">
+                <img src="./img/inquiry.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="analyses2">
+        <div class="analyses2__img">
+            <img src="./img/dedicated_team.svg" alt="">
+        </div>
+        <div class="analyses2__text">
             <h2>
                 A dedicated team to grow
                 your company
@@ -166,31 +162,116 @@
                 Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
                 aliquam sit nullam neque ultrices.
             </p>
-            <div>
-                <a href="###"><span>Get started</span></a>
-                <a href="###"><span>Talk to sales</span></a>
+            <div class="analyses2__text__link">
+                <a href="###" class="analyses2__text__link--button1"><span>Get started</span></a>
+                <a href="###" class="analyses2__text__link--button2"><span>Talk to sales</span></a>
             </div>
         </div>
-        <div class="service-1__right">
-            <img src="" alt="">
+    </section>
+
+    <section class="meeting">
+        <div class="meeting__box">
+            <div class="meeting__box__text">
+                <h2>
+                    A dedicated team to grow
+                    your company
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
+                    aliquam sit nullam neque ultrices.
+                </p>
+                <div class="meeting__box__text__link">
+                    <a href="###" class="meeting__box__text__link--button1"><span>Get started</span></a>
+                    <a href="###" class="meeting__box__text__link--button2"><span>Talk to sales</span></a>
+                </div>
+            </div>
+            <div class="meeting__box__img">
+                <img src="./img/meeting.svg" alt="">
+            </div>
         </div>
     </section>
 
     <section class="bottom">
-        <h2>
-            A dedicated team to grow
-            your company
-        </h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-            phasellus mollis sit aliquam sit nullam neque ultrices.
-        </p>
-        <div>
-            <a href="###"><span>Get started</span></a>
-            <a href="###"><span>Talk to sales</span></a>
+        <div class="bottom__box">
+            <h2>
+                A dedicated team to grow
+                your company
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam neque ultrices.
+            </p>
+            <div class="bottom__box__link">
+                <a href="###" class="bottom__box__link--button1"><span>Get started</span></a>
+                <a href="###" class="bottom__box__link--button2"><span>Talk to sales</span></a>
+            </div>
         </div>
     </section>
 
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__link">
+            <div class="footer__link__theme">
+                <h3>Integrations</h3>
+                <ul>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Integrations</a></li>
+                    <li><a href="">Affilliate Programs</a></li>
+                    <li><a href="">Agency Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer__link__theme">
+                <h3>Marketing</h3>
+                <ul>
+                    <li><a href="">Entrepreneur</a></li>
+                    <li><a href="">Online marketer</a></li>
+                    <li><a href="">Marketing manager</a></li>
+                </ul>
+            </div>
+            <div class="footer__link__theme">
+                <h3>Head</h3>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">API Docs</a></li>
+                </ul>
+            </div>
+            <div class="footer__link__theme">
+                <h3>solutions</h3>
+                <ul>
+                    <li><a href="">Entrepreneur</a></li>
+                    <li><a href="">Online marketer</a></li>
+                    <li><a href="">Marketing manager</a></li>
+                </ul>
+            </div>
+            <div class="footer__link__theme">
+                <h3>Editors</h3>
+                <ul>
+                    <li><a href="">Entrepreneur</a></li>
+                    <li><a href="">Online marketer</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__language">
+            <div class="footer__language__list">
+                <a href="">English</a>
+                <img src="./img/dot.svg" alt="">
+                <a href="">Español</a>
+                <img src="./img/dot.svg" alt="">
+                <a href="">Francais</a>
+            </div>
+        </div>
+
+        <div class="footer__detail">
+            <div class="footer__detail__left">
+                <a href="">Privacy Policy</a>
+                <a href="">Security Information</a>
+                <a href="">Integrations</a>
+            </div>
+            <div class="footer__detail__right">
+                <p>Copyright &copy; 2022</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
