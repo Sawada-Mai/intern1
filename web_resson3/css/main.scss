@@ -51,10 +51,6 @@
     }
 }
 
-@function imgvw($px) {
-    @return calc(121px - #{$px} - 42px);
-}
-
 body {
     font-family: Montserrat;
     color: #333;
