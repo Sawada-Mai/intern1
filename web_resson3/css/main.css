@@ -5,17 +5,17 @@ body {
 }
 
 header {
-  width: 1440px;
+  min-width: 1440px;
   padding: 0px 108px;
   margin-bottom: 12px;
 }
 
 header .banner {
-  width: 1224px;
+  max-width: 1224px;
   padding: 16px 0px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 header .banner__logo {
@@ -75,26 +75,33 @@ header .banner__nav__button:hover {
 }
 
 .top {
-  width: 1440px;
-  padding: 80px 108px;
+  min-width: 1440px;
   background: #000;
   margin-bottom: 12px;
 }
 
-.top__text {
+.top .container {
+  width: 1224px;
+  margin: auto;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.top .container__text {
   width: 574px;
-  margin: 0px 325px 32px 325px;
+  margin: auto;
+  margin-bottom: 32px;
   text-align: center;
 }
 
-.top__text h1 {
+.top .container__text h1 {
   color: #fff;
   font-size: 42px;
   font-weight: 700;
   line-height: 42px;
 }
 
-.top__text p {
+.top .container__text p {
   margin-bottom: 33px;
   color: #fff;
   font-size: 16px;
@@ -102,13 +109,13 @@ header .banner__nav__button:hover {
   line-height: 24px;
 }
 
-.top__text__link {
+.top .container__text__link {
   display: flex;
   justify-content: center;
   gap: 28px;
 }
 
-.top__text__link--button1 {
+.top .container__text__link--button1 {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
@@ -128,11 +135,11 @@ header .banner__nav__button:hover {
   line-height: 20px;
 }
 
-.top__text__link--button1:hover {
+.top .container__text__link--button1:hover {
   opacity: 0.7;
 }
 
-.top__text__link--button2 {
+.top .container__text__link--button2 {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
@@ -152,32 +159,30 @@ header .banner__nav__button:hover {
   line-height: 20px;
 }
 
-.top__text__link--button2:hover {
+.top .container__text__link--button2:hover {
   opacity: 0.7;
 }
 
-.top img {
+.top .container img {
   width: 1224px;
   height: auto;
 }
 
 .company {
-  width: 1440px;
-  display: flex;
-  justify-content: center;
+  min-width: 1440px;
+  padding: 1px 28px 1px 28px;
   border-top: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
 }
 
 .company__container {
-  display: flex;
-  align-items: center;
-  width: 1384px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   height: 121px;
 }
 
 .company__container__box {
-  width: 197.72px;
+  min-width: 197.72px;
   height: 121px;
   display: flex;
   justify-content: center;
@@ -190,25 +195,31 @@ header .banner__nav__button:hover {
 }
 
 .features {
+  min-width: 1440px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.features .container {
+  width: 1224px;
+  margin: auto;
   display: flex;
-  width: 1440px;
-  padding: 80px 108px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
 }
 
-.features__box {
+.features .container__box {
   width: 376px;
   height: 176px;
 }
 
-.features__box img {
+.features .container__box img {
   display: block;
   margin-bottom: 20px;
 }
 
-.features__box h3 {
+.features .container__box h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -216,7 +227,7 @@ header .banner__nav__button:hover {
   margin-bottom: 10px;
 }
 
-.features__box p {
+.features .container__box p {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -224,21 +235,23 @@ header .banner__nav__button:hover {
 }
 
 .inquiry {
-  width: 1440px;
-  padding: 80px 108px;
-  justify-content: center;
-  align-items: center;
+  min-width: 1440px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .inquiry__box {
+  width: 1224px;
+  padding-left: 54px;
+  padding-right: 54px;
+  margin: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 28px;
 }
 
 .inquiry__box__text {
-  width: 598px;
+  min-width: 598px;
   height: 256px;
 }
 
@@ -316,27 +329,33 @@ header .banner__nav__button:hover {
 }
 
 .analyses {
-  width: 1440px;
-  padding: 80px 108px;
+  min-width: 1440px;
+  background: #000;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.analyses .container {
+  width: 1224px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 63px;
-  background: #000;
 }
 
-.analyses__img {
+.analyses .container__img {
   width: 563px;
   height: 320px;
   max-width: 1224px;
 }
 
-.analyses__text {
+.analyses .container__text {
   width: 598px;
   height: 256px;
 }
 
-.analyses__text h2 {
+.analyses .container__text h2 {
   font-size: 42px;
   font-weight: 700;
   line-height: 42px;
@@ -344,7 +363,7 @@ header .banner__nav__button:hover {
   margin-bottom: 10px;
 }
 
-.analyses__text p {
+.analyses .container__text p {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -352,13 +371,13 @@ header .banner__nav__button:hover {
   margin-bottom: 48px;
 }
 
-.analyses__text__link {
+.analyses .container__text__link {
   display: flex;
   justify-content: flex-start;
   gap: 28px;
 }
 
-.analyses__text__link--button1 {
+.analyses .container__text__link--button1 {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
@@ -378,11 +397,11 @@ header .banner__nav__button:hover {
   line-height: 20px;
 }
 
-.analyses__text__link--button1:hover {
+.analyses .container__text__link--button1:hover {
   opacity: 0.7;
 }
 
-.analyses__text__link--button2 {
+.analyses .container__text__link--button2 {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
@@ -402,21 +421,21 @@ header .banner__nav__button:hover {
   line-height: 20px;
 }
 
-.analyses__text__link--button2:hover {
+.analyses .container__text__link--button2:hover {
   opacity: 0.7;
 }
 
 .inquiry2 {
-  width: 1440px;
-  padding: 80px 108px;
-  justify-content: center;
-  align-items: center;
+  min-width: 1440px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .inquiry2__box {
+  width: 1224px;
+  margin: auto;
   display: flex;
   align-items: center;
-  padding-right: 108px;
   gap: 28px;
 }
 
@@ -499,27 +518,31 @@ header .banner__nav__button:hover {
 }
 
 .analyses2 {
-  width: 1440px;
-  padding: 80px 108px;
+  min-width: 1440px;
+  background: #000;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.analyses2 .container {
+  width: 1224px;
+  margin: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 62px;
-  background: #000;
 }
 
-.analyses2__img {
+.analyses2 .container__img {
   width: 564px;
   height: 423px;
-  max-width: 1224px;
 }
 
-.analyses2__text {
+.analyses2 .container__text {
   width: 598px;
   height: 256px;
 }
 
-.analyses2__text h2 {
+.analyses2 .container__text h2 {
   font-size: 42px;
   font-weight: 700;
   line-height: 42px;
@@ -527,7 +550,7 @@ header .banner__nav__button:hover {
   margin-bottom: 10px;
 }
 
-.analyses2__text p {
+.analyses2 .container__text p {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -535,13 +558,13 @@ header .banner__nav__button:hover {
   margin-bottom: 48px;
 }
 
-.analyses2__text__link {
+.analyses2 .container__text__link {
   display: flex;
   justify-content: flex-start;
   gap: 28px;
 }
 
-.analyses2__text__link--button1 {
+.analyses2 .container__text__link--button1 {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
@@ -561,11 +584,11 @@ header .banner__nav__button:hover {
   line-height: 20px;
 }
 
-.analyses2__text__link--button1:hover {
+.analyses2 .container__text__link--button1:hover {
   opacity: 0.7;
 }
 
-.analyses2__text__link--button2 {
+.analyses2 .container__text__link--button2 {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
@@ -585,21 +608,21 @@ header .banner__nav__button:hover {
   line-height: 20px;
 }
 
-.analyses2__text__link--button2:hover {
+.analyses2 .container__text__link--button2:hover {
   opacity: 0.7;
 }
 
 .meeting {
-  width: 1440px;
-  padding: 80px 108px;
-  justify-content: center;
-  align-items: center;
+  min-width: 1440px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .meeting__box {
+  width: 1224px;
+  margin: auto;
   display: flex;
   align-items: center;
-  padding-right: 34px;
   gap: 28px;
 }
 
@@ -682,17 +705,16 @@ header .banner__nav__button:hover {
 }
 
 .bottom {
-  width: 1440px;
-  padding: 80px 108px;
-  align-items: center;
+  min-width: 1440px;
   background: #000;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .bottom__box {
   width: 1224px;
-  max-width: 1400px;
+  margin: auto;
   padding: 0px 325px;
-  justify-content: center;
   text-align: center;
 }
 
@@ -766,12 +788,18 @@ header .banner__nav__button:hover {
   opacity: 0.7;
 }
 
-.footer {
-  width: 1440px;
-  padding: 70px;
+footer {
+  min-width: 1440px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-.footer a {
+footer .container {
+  width: 1300px;
+  margin: auto;
+}
+
+footer .container a {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
@@ -781,21 +809,22 @@ header .banner__nav__button:hover {
   line-height: 23.66px;
 }
 
-.footer a:hover {
+footer .container a:hover {
   opacity: 0.7;
 }
 
-.footer__link {
+footer .container__link {
   display: flex;
+  justify-content: space-between;
 }
 
-.footer__link__theme {
+footer .container__link__theme {
   width: 237.59px;
   align-items: flex-start;
   padding-bottom: 35px;
 }
 
-.footer__link__theme h3 {
+footer .container__link__theme h3 {
   font-size: 21px;
   font-weight: 600;
   line-height: 27.3px;
@@ -803,15 +832,19 @@ header .banner__nav__button:hover {
   padding-bottom: 26.6px;
 }
 
-.footer__link__theme ul {
+footer .container__link__theme ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   gap: 13.7px;
   margin-top: 13.7px;
+  color: #333945;
+  font-size: 18.2px;
+  font-weight: 400;
+  line-height: 23.66px;
 }
 
-.footer__language {
+footer .container__language {
   padding: 29px 510.97px 29px 511.23px;
   margin: 42px 0px;
   justify-content: center;
@@ -820,31 +853,41 @@ header .banner__nav__button:hover {
   border-bottom: 1px solid #D4D6DB;
 }
 
-.footer__language__list {
+footer .container__language__list {
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.5s;
   display: flex;
   align-items: center;
   gap: 13.9px;
+  color: #010102;
+  font-size: 18.2px;
+  font-weight: 400;
+  line-height: 23.66px;
+  /* 130% */
+  text-decoration-line: underline;
 }
 
-.footer__language__list:hover {
+footer .container__language__list:hover {
   opacity: 0.7;
 }
 
-.footer__detail {
+footer .container__detail {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #333945;
+  font-size: 18.2px;
+  font-weight: 400;
+  line-height: 23.66px;
 }
 
-.footer__detail__left {
+footer .container__detail__left {
   display: flex;
   gap: 20.7px;
 }
 
-.footer__detail__right {
+footer .container__detail__right {
   font-size: 18.2px;
   font-weight: 400;
   line-height: 23.66px;
