@@ -223,14 +223,16 @@ header .banner__nav__button:hover .slide {
 .top .container__text__link--button2 .circle {
   width: 0%;
   height: 0%;
-  opacity: 0;
+  opacity: 0.5;
   line-height: 40px;
   border-radius: 50%;
   background: #000;
   position: absolute;
-  transition: all .5s ease-Out;
-  top: 20px;
-  left: 70px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.5, 0.01, 0, 1);
+  top: 26px;
+  left: 81px;
 }
 
 .top .container__text__link--button2:hover {
@@ -245,8 +247,8 @@ header .banner__nav__button:hover .slide {
   width: 200%;
   height: 500%;
   opacity: 1;
-  top: -70px;
-  left: -70px;
+  top: -80px;
+  left: -75px;
 }
 
 .top .container img {
@@ -435,14 +437,16 @@ header .banner__nav__button:hover .slide {
 .inquiry__box__text__link--button2 .circle {
   width: 0%;
   height: 0%;
-  opacity: 0;
+  opacity: 0.5;
   line-height: 40px;
   border-radius: 50%;
   background: #000;
   position: absolute;
-  transition: all .5s ease-Out;
-  top: 20px;
-  left: 70px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.5, 0.01, 0, 1);
+  top: 26px;
+  left: 81px;
 }
 
 .inquiry__box__text__link--button2:hover {
@@ -457,8 +461,8 @@ header .banner__nav__button:hover .slide {
   width: 200%;
   height: 500%;
   opacity: 1;
-  top: -70px;
-  left: -70px;
+  top: -80px;
+  left: -75px;
 }
 
 .inquiry__box__img {
@@ -589,14 +593,16 @@ header .banner__nav__button:hover .slide {
 .analyses .container__text__link--button2 .circle {
   width: 0%;
   height: 0%;
-  opacity: 0;
+  opacity: 0.5;
   line-height: 40px;
   border-radius: 50%;
   background: #000;
   position: absolute;
-  transition: all .5s ease-Out;
-  top: 20px;
-  left: 70px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.5, 0.01, 0, 1);
+  top: 26px;
+  left: 81px;
 }
 
 .analyses .container__text__link--button2:hover {
@@ -611,8 +617,8 @@ header .banner__nav__button:hover .slide {
   width: 200%;
   height: 500%;
   opacity: 1;
-  top: -70px;
-  left: -70px;
+  top: -80px;
+  left: -75px;
 }
 
 .inquiry2 {
@@ -728,14 +734,16 @@ header .banner__nav__button:hover .slide {
 .inquiry2__box__text__link--button2 .circle {
   width: 0%;
   height: 0%;
-  opacity: 0;
+  opacity: 0.5;
   line-height: 40px;
   border-radius: 50%;
   background: #000;
   position: absolute;
-  transition: all .5s ease-Out;
-  top: 20px;
-  left: 70px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.5, 0.01, 0, 1);
+  top: 26px;
+  left: 81px;
 }
 
 .inquiry2__box__text__link--button2:hover {
@@ -750,8 +758,8 @@ header .banner__nav__button:hover .slide {
   width: 200%;
   height: 500%;
   opacity: 1;
-  top: -70px;
-  left: -70px;
+  top: -80px;
+  left: -75px;
 }
 
 .inquiry2__box__img {
@@ -880,14 +888,16 @@ header .banner__nav__button:hover .slide {
 .analyses2 .container__text__link--button2 .circle {
   width: 0%;
   height: 0%;
-  opacity: 0;
+  opacity: 0.5;
   line-height: 40px;
   border-radius: 50%;
   background: #000;
   position: absolute;
-  transition: all .5s ease-Out;
-  top: 20px;
-  left: 70px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.5, 0.01, 0, 1);
+  top: 26px;
+  left: 81px;
 }
 
 .analyses2 .container__text__link--button2:hover {
@@ -902,8 +912,8 @@ header .banner__nav__button:hover .slide {
   width: 200%;
   height: 500%;
   opacity: 1;
-  top: -70px;
-  left: -70px;
+  top: -80px;
+  left: -75px;
 }
 
 .meeting {
@@ -1019,14 +1029,16 @@ header .banner__nav__button:hover .slide {
 .meeting__box__text__link--button2 .circle {
   width: 0%;
   height: 0%;
-  opacity: 0;
+  opacity: 0.5;
   line-height: 40px;
   border-radius: 50%;
   background: #000;
   position: absolute;
-  transition: all .5s ease-Out;
-  top: 20px;
-  left: 70px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.5, 0.01, 0, 1);
+  top: 26px;
+  left: 81px;
 }
 
 .meeting__box__text__link--button2:hover {
@@ -1041,8 +1053,8 @@ header .banner__nav__button:hover .slide {
   width: 200%;
   height: 500%;
   opacity: 1;
-  top: -70px;
-  left: -70px;
+  top: -80px;
+  left: -75px;
 }
 
 .meeting__box__img {
@@ -1160,14 +1172,16 @@ header .banner__nav__button:hover .slide {
 .bottom__box__link--button2 .circle {
   width: 0%;
   height: 0%;
-  opacity: 0;
+  opacity: 0.5;
   line-height: 40px;
   border-radius: 50%;
   background: #000;
   position: absolute;
-  transition: all .5s ease-Out;
-  top: 20px;
-  left: 70px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.5, 0.01, 0, 1);
+  top: 26px;
+  left: 81px;
 }
 
 .bottom__box__link--button2:hover {
@@ -1182,8 +1196,8 @@ header .banner__nav__button:hover .slide {
   width: 200%;
   height: 500%;
   opacity: 1;
-  top: -70px;
-  left: -70px;
+  top: -80px;
+  left: -75px;
 }
 
 footer {
