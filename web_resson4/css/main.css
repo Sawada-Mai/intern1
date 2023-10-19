@@ -378,18 +378,16 @@ body {
 }
 
 #fifth .content__accordion p {
-  margin-top: 34px;
   font-size: 30px;
   font-weight: 400;
   line-height: 40px;
-}
-
-#fifth .content__accordion #hidden {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease-in-out;
 }
 
 #fifth .content__accordion #show {
-  display: block;
+  max-height: 200px;
 }
 
 #sixth {
