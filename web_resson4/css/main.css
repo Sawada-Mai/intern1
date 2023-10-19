@@ -1,6 +1,8 @@
 body {
   font-family: Arial;
   color: #262626;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 #first {
@@ -369,6 +371,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 #fifth .content__accordion label h4 {

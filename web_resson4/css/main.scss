@@ -51,6 +51,8 @@ $black: #262626;
 body {
     font-family: Arial;
     color: $black;
+    scrollbar-width: none; //（Firefox）
+    -ms-overflow-style: none; //（IE・Edge）
 }
 
 #first {
@@ -341,6 +343,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                cursor: pointer;
                 h4 {
                     user-select: none;
                     font-size: 30px;
