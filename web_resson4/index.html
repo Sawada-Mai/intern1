@@ -5,56 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Document</title>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <section id="first">
         <div class="content">
             <div class="top">
-                <img src="./img/paint.svg" alt="paint">
+                <img src="./img/paint.svg" alt="paint" class="top__paint">
             </div>
 
             <div class="bottom">
                 <div class="bottom__left">
-                    <p>risus praesent vulputate.</p>
-                    <h1>
+                    <p class="bottom__left__subtitle">risus praesent vulputate.</p>
+                    <h1 class="bottom__left__title">
                         Cursus Integer<br/>
-                        Consequat Tristique,
+                        Consequat Tristique.
                     </h1>
-                    <ul>
-                        <li>
-                            <img src="./img/check.svg" alt="check">
+                    <ul class="bottom__left__list">
+                        <li class="bottom__left__list__item">
+                            <img src="./img/check.svg" alt="check" class="bottom__left__list__check">
                             Cursus Integer
                         </li>
-                        <li>
+                        <li class="bottom__left__list__item">
                             <img src="./img/check.svg" alt="check">
                             Integer Consequat
                         </li>
-                        <li>
+                        <li class="bottom__left__list__item">
                             <img src="./img/check.svg" alt="check">
                             Tellus Euismod Pellentesque
                         </li>
-                        <li>
+                        <li class="bottom__left__list__item">
                             <img src="./img/check.svg" alt="check">
                             Aliquot Tristique
                         </li>
-                        <li>
+                        <li class="bottom__left__list__item">
                             <img src="./img/check.svg" alt="check">
                             Pellentesque Tempus
                         </li>
-                        <li>
+                        <li class="bottom__left__list__item">
                             <img src="./img/check.svg" alt="check">
                             Mauris Fermentum Praesent
                         </li>
                     </ul>
-                    <a href="##">
+                    <a href="##" class="bottom__left__button">
                         Lorem Ipsum
                         <img src="./img/arrow_black.svg" alt="arrow_black">
                     </a>
                 </div>
 
                 <div class="bottom__right">
-                    <img src="./img/operation.png" alt="PC operation">
+                    <img src="./img/operation.png" alt="PC operation" class="bottom__right__operation">
                 </div>
             </div>
         </div>
@@ -63,23 +68,22 @@
     <section id="second">
         <div class="content">
             <div class="left">
-                <h2>
+                <h2 class="left__title">
                     Phasellus a vitae iaculis magna eleifend pulvinar velit odio.
                 </h2>
-                <h3>Vulputate et vulputate suspendisse natoque!</h3>
-                <p>
+                <h3 class="left__subtitle">Vulputate et vulputate </br>suspendisse natoque!</h3>
+                <p class="left__detail">
                     Euismod magna id purus eget nunc ligula suspendisse dui netus. 
                     Condimentum blandit rutrum at mauris enim pulvinar duis etiam 
                     duis vulputate et vulputate suspendisse natoque id tellus consectetur pulvinar et.
                 </p>
-                <a href="##">
+                <a href="##" class="left__button">
                     Lorem Ipsum
                     <img src="./img/arrow_white.svg" alt="arrow_black">
                 </a>
             </div>
-
             <div class="right">
-                <img src="./img/select.png" alt="select">
+                <img src="./img/select.png" alt="select" class="right__select">
             </div>
         </div>
     </section>
@@ -87,121 +91,132 @@
     <section id="third">
         <div class="content">
             <div class="left">
-                <p>
+                <p class="left__subtitle">
                     Quisque porttitor vitae vel amet neque scelerisque mattis. 
                     Consectetur nibh velit magna consectetur leo. 
                 </p>
-                <h2>
+                <h2 class="left__title">
                     Cursus Integer 
                     Conseq <br/>
                     Aliquam Tristique. 
                 </h2>
-                <a href="##">
+                <a href="##" class="left__button">
                     Lorem Ipsum
                     <img src="./img/arrow_black.svg" alt="arrow_black">
                 </a>
             </div>
 
             <div class="right">
-                <div class="right__box white">
-                    <div class="right__box__content">
-                        <img src="./img/box_1.svg" alt="box1">
-                        <h3>1<span>.</span></h3>
-                        <h4>Phasellus Vitae</h4>
-                        <h5>Quisque</h5>
-                        <p>Porttitor vitae vel amet</p>
-                    </div>
-                </div>
-                <div class="right__box yellow">
-                    <div class="right__box__content">
-                        <img src="./img/box_2.svg" alt="box2">
-                        <h3>2<span>.</span></h3>
-                        <h4>Iaculis Magna</h4>
-                        <h5>Porttitor</h5>
-                        <p>neque scelerisque mattis.</p>
-                    </div>
-                </div>
-                <div class="right__box yellow">
-                    <div class="right__box__content">
-                        <img src="./img/box_3.svg" alt="box3">
-                        <h3>3<span>.</span></h3>
-                        <h4>Eleifend Pulvinar</h4>
-                        <h5>Vitae</h5>
-                        <p>Consectetur nibh velit</p>
-                    </div>
-                </div>
-                <div class="right__box white">
-                    <div class="right__box__content">
-                        <img src="./img/box_4.svg" alt="box4">
-                        <h3>4<span>.</span></h3>
-                        <h4>Velit Odio Phir</h4>
-                        <h5>Ametneq</h5>
-                        <p>magna consectetur leo.</p>
-                    </div>
-                </div>
+                <ul class="right__list">
+                    <li class="right__list__box">
+                        <img src="./img/box_1.svg" alt="box1" class="right__list__box__icon">
+                        <h3 class="right__list__box__num">1<span>.</span></h3>
+                        <h4 class="right__list__box__title">Phasellus Vitae</h4>
+                        <h5 class="right__list__box__subtitle">Quisque</h5>
+                        <p class="right__list__box__detail">Porttitor vitae vel amet</p>
+                    </li>
+                    <li class="right__list__box">
+                        <img src="./img/box_2.svg" alt="box2" class="right__list__box__icon">
+                        <h3 class="right__list__box__num">2<span>.</span></h3>
+                        <h4 class="right__list__box__title">Iaculis Magna</h4>
+                        <h5 class="right__list__box__subtitle">Porttitor</h5>
+                        <p class="right__list__box__detail">neque scelerisque mattis.</p>
+                    </li>
+                    <li class="right__list__box">
+                        <img src="./img/box_3.svg" alt="box3" class="right__list__box__icon">
+                        <h3 class="right__list__box__num">3<span>.</span></h3>
+                        <h4 class="right__list__box__title">Eleifend Pulvinar</h4>
+                        <h5 class="right__list__box__subtitle">Vitae</h5>
+                        <p class="right__list__box__detail">Consectetur nibh velit</p>
+                    </li>
+                    <li class="right__list__box">
+                        <img src="./img/box_4.svg" alt="box4" class="right__list__box__icon">
+                        <h3 class="right__list__box__num">4<span>.</span></h3>
+                        <h4 class="right__list__box__title">Velit Odio Phir</h4>
+                        <h5 class="right__list__box__subtitle">Ametneq</h5>
+                        <p class="right__list__box__detail">magna consectetur leo.</p>
+                    </li>
+                </ul>
             </div>
-        </div>
     </section>
 
     <section id="fourth">
         <div class="content">
             <div class="left">
-                <h2>
+                <h2 class="left__title">
                     Cursus Integer 
                     consequat Tristique.
                 </h2>
-                <ul>
-                    <li>
+                <ul class="left__list">
+                    <li class="left__list__item">
                         <img src="./img/check.svg" alt="check">
                         Ac viverra sed risus praesent vulputate. 
                     </li>
-                    <li>
+                    <li class="left__list__item">
                         <img src="./img/check.svg" alt="check">
                         Natoqu consectetur pulvinar.
                     </li>
-                    <li>
+                    <li class="left__list__item">
                         <img src="./img/check.svg" alt="check">
                         Sollicitudin ornare tempus nulla varius pulvinar.
                     </li>
-                    <li>
+                    <li class="left__list__item">
                         <img src="./img/check.svg" alt="check">
                         Varius pulvinar
                     </li>
-                    <li>
+                    <li class="left__list__item">
                         <img src="./img/check.svg" alt="check">
                         Natoque id tellus consectetur
                     </li>
-                    <li>
+                    <li class="left__list__item">
                         <img src="./img/check.svg" alt="check">
                         Vulputate et vulputate suspendisse
                     </li>
                 </ul>
-                <a href="##">
+                <a href="##" class="left__button">
                     Lorem Ipsum
                     <img src="./img/arrow_white.svg" alt="arrow_black">
                 </a>
             </div>
 
             <div class="right">
-                <img src="./img/comparison.jpg" alt="slide_img">
+                <!-- Sliderを包むコンテナ要素 -->
+                <div class="swiper">
+                    <!-- スライド要素を包む要素 -->
+                    <div class="swiper-wrapper">
+                    <!-- 各スライド -->
+                    <div class="swiper-slide slide1">
+                        <img src="./img/select.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <img src="./img/operation.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <img src="./img/comparison.jpg" alt="">
+                    </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="fifth">
         <div class="content">
-            <h2>Phasellus a vitae iaculis magna.</h2>
-            <h3>Phasellus a vitae iaculis magna eleifend pulvinar velit odio.</h3>
+            <h2 class="content__title">Phasellus a vitae iaculis magna.</h2>
+            <h3 class="content__subtitle">Phasellus a vitae iaculis magna eleifend pulvinar velit odio.</h3>
             <div class="content__accordion">
                 <input type="checkbox" id="box1" class="content__accordion__toggle">
-                <label for="box1">
+                <label>
                     <h4>
                         Quam vehicula faucibus amet </br>
                         lorem.
                     </h4>
                     <img src="./img/plus.svg" alt="sign" id="sign">
                 </label>
-                <p id="hidden">
+                <p id="hidden" class="content__accordion__detail">
                     <br/>
                     Euismod magna id purus eget nunc ligula suspendisse dui netus. 
                     Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. 
@@ -211,13 +226,13 @@
 
             <div class="content__accordion">
                 <input type="checkbox" id="box2" class="content__accordion__toggle">
-                <label for="box2">
+                <label>
                     <h4>
                         Quam vehicula faucibus amet lorem.
                     </h4>
                     <img src="./img/plus.svg" alt="sign" id="sign">
                 </label>
-                <p id="hidden">
+                <p id="hidden" class="content__accordion__detail">
                     <br/>
                     Euismod magna id purus eget nunc ligula suspendisse dui netus. 
                     Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. 
@@ -227,13 +242,13 @@
 
             <div class="content__accordion">
                 <input type="checkbox" id="box3" class="content__accordion__toggle">
-                <label for="box3">
+                <label>
                     <h4>
                         Mauris fermentum praesent tellus euismod pellentesque urna ac massa in.
                     </h4>
                     <img src="./img/plus.svg" alt="sign" id="sign">
                 </label>
-                <p id="hidden">
+                <p id="hidden" class="content__accordion__detail">
                     <br/>
                     Euismod magna id purus eget nunc ligula suspendisse dui netus. 
                     Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. 
@@ -243,13 +258,13 @@
 
             <div class="content__accordion">
                 <input type="checkbox" id="box4" class="content__accordion__toggle">
-                <label for="box4">
+                <label>
                     <h4>
                         Vulputate et vulputate suspendisse natoque id tellus consectetur pulvinar et.
                     </h4>
                     <img src="./img/plus.svg" alt="sign" id="sign">
                 </label>
-                <p id="hidden">
+                <p id="hidden" class="content__accordion__detail">
                     <br/>
                     Euismod magna id purus eget nunc ligula suspendisse dui netus. 
                     Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. 
@@ -259,13 +274,13 @@
 
             <div class="content__accordion">
                 <input type="checkbox" id="box5" class="content__accordion__toggle">
-                <label for="box5">
+                <label>
                     <h4>
                         Sollicitudin ornare tempus felis nulla varius pulvinar nibh viverra ornare.
                     </h4>
                     <img src="./img/plus.svg" alt="sign" id="sign">
                 </label>
-                <p id="hidden">
+                <p id="hidden" class="content__accordion__detail">
                     <br/>
                     Euismod magna id purus eget nunc ligula suspendisse dui netus. 
                     Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. 
@@ -275,13 +290,13 @@
 
             <div class="content__accordion">
                 <input type="checkbox" id="box6" class="content__accordion__toggle">
-                <label for="box6">
+                <label>
                     <h4>
                         Consectetur nibh velit magna consectetur leo.
                     </h4>
                     <img src="./img/plus.svg" alt="sign" id="sign">
                 </label>
-                <p id="hidden">
+                <p id="hidden" class="content__accordion__detail">
                     <br/>
                     Euismod magna id purus eget nunc ligula suspendisse dui netus. 
                     Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. 
@@ -291,13 +306,13 @@
 
             <div class="content__accordion">
                 <input type="checkbox" id="box7" class="content__accordion__toggle">
-                <label for="box7">
+                <label>
                     <h4>
                         Quisque porttitor vitae vel amet neque scelerisque mattis.
                     </h4>
                     <img src="./img/plus.svg" alt="sign" id="sign">
                 </label>
-                <p id="hidden">
+                <p id="hidden" class="content__accordion__detail">
                     <br/>
                     Euismod magna id purus eget nunc ligula suspendisse dui netus. 
                     Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. 
@@ -311,12 +326,12 @@
         <div class="content">
             <div class="top">
                 <div class="top__left">
-                    <h2>
+                    <h2 class="top__left__title">
                         Vulputate et pulvinar ethre Suspendisse tellus consecteur
                     </h2>
                 </div>
                 <div class="top__right">
-                    <a href="##">
+                    <a href="##" class="top__right__button">
                         Lorem Ipsum
                         <img src="./img/arrow_black.svg" alt="arrow_black">
                     </a>
@@ -328,9 +343,9 @@
                     <p>Copyright &copy; 2022 Lorem Ipsum.</p>
                 </div>
                 <div class="bottom__right">
-                    <a href="">Privacy Policy</a>
-                    <p>|</p>
-                    <a href="">Terms and Conditions</a>
+                    <a href="##" class="bottom__right__link">Privacy Policy</a>
+                    <p class="bottom__right__center">|</p>
+                    <a href="##" class="bottom__right__link">Terms and Conditions</a>
                 </div>
             </div>
         </div>
@@ -339,3 +354,9 @@
     <script src="./main.js"></script>
 </body>
 </html>
+
+<!-- 変更点
+> SP対応
+> スライドの追加
+> アコーディオンのクリック範囲を全体に変更
+-->

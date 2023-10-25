@@ -21,7 +21,7 @@
     @return calc(#{$px} * (100vw / #{1280}));
 }
 @function vw($px) {
-    @return calc(#{$px} * (100vw / #{360}));
+    @return calc(#{$px} * (100vw / #{375}));
 }
 
 
@@ -58,58 +58,121 @@ body {
 #first {
     background-color: $light_yellow;
     .content {
-        max-width: 1400px;
         margin: auto;
+        max-width: 1400px;
         padding-top: 45px;
         padding-bottom: 98px;
+        @include sp {
+            width: vw(335);
+            padding-top: vw(20);
+            padding-bottom: vw(66.62);
+        }
         .top {
             @include center;
             height: 100px;
             background-color: #fff;
             border-radius: 5000px;
-        }
-        .bottom {
-            margin-top: 155px;
-            display: flex;
-            justify-content: space-between;
-            p {
-                color: $dark_yellow;
-                font-size: 30px;
-                font-weight: 700;
-            }
-            h1 {
-                font-size: 80px;
-                font-weight: 700;
-                line-height: 90px;
-            }
-            ul {
-                max-width: 683px;
-                margin-top: 43px;
-                display: flex;
-                flex-wrap: wrap;
-                list-style: none;
-                gap: 14px;
-                li {
-                    @include center;
-                    padding: 14px 40px 14px 20px;
-                    gap: 7px;
-                    border-radius: 5000px;
-                    background-color: #fff;
-                    font-size: 20px;
-                    font-weight: 700;
+            margin-bottom: 155px;
+            @include sp {
+                height: vw(60);
+                margin: auto;
+                margin-bottom: vw(20);
+                &__paint {
+                    width: vw(80.635);
+                    height: auto;
                 }
             }
-            a {
-                @include linkStyles;
-                @include space_between;
-                width: 350px;
-                margin-top: 69px;
-                padding: 22px 50px 24px 50px;
-                border-radius: 5000px;
-                background-color: $dark_yellow;
-                font-size: 24px;
-                font-weight: 700;
-                color: $black;
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+            @include sp {
+                justify-content: center;
+            }
+            &__left {
+                width: 780px;
+                @include sp {
+                    width: auto;
+                }
+                &__subtitle {
+                    color: $dark_yellow;
+                    font-size: 30px;
+                    font-weight: 700;
+                    @include sp {
+                        font-size: vw(16);
+                    }
+                }
+                &__title {
+                    font-size: 80px;
+                    font-weight: 700;
+                    line-height: 90px;
+                    @include sp {
+                        width: vw(255);
+                        font-size: vw(36);
+                        line-height: normal;
+                    }
+                }
+                &__list {
+                    max-width: 683px;
+                    margin-top: 43px;
+                    gap: 14px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    @include sp {
+                        margin-top: vw(32);
+                        gap: vw(13)
+                    }
+                    &__item {
+                        @include center;
+                        padding: 14px 40px 14px 20px;
+                        gap: 7px;
+                        border-radius: 5000px;
+                        background-color: #fff;
+                        font-size: 20px;
+                        font-weight: 700;
+                        @include sp {
+                            padding: vw(11.795) vw(33.701) vw(11.795) vw(16.85);
+                            gap: vw(5.898);
+                            font-size: vw(18);
+                            font-weight: vw(700);
+                        }
+                    }
+                    &__check {
+                        @include sp {
+                            width: 25.276px;
+                            height: 25.276px;
+                        }
+                    }
+                }
+                &__button {
+                    @include linkStyles;
+                    @include space_between;
+                    width: 350px;
+                    margin-top: 69px;
+                    padding: 22px 50px 24px 50px;
+                    border-radius: 5000px;
+                    background-color: $dark_yellow;
+                    color: $black;
+                    font-size: 24px;
+                    font-weight: 700;
+                    @include sp {
+                        width: vw(335);
+                        margin-top: vw(37);
+                        padding: vw(16.923) vw(38.462) vw(18.462) vw(38.462);
+                    }
+                }
+            }
+            &__right {
+                @include sp {
+                    margin-bottom: 15px;
+                }
+                &__operation {
+                    @include sp {
+                        width: vw(335);
+                    }
+                }
             }
         }
     }
@@ -120,32 +183,58 @@ body {
     .content {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap-reverse;
         max-width: 1400px;
         margin: auto;
         padding-top: 102px;
         padding-bottom: 100px;
+        @include sp {
+            max-width: vw(335);
+            padding-top: vw(16);
+            padding-bottom: vw(60.62);
+        }
         .left {
-            h2 {
+            width: 575.301px;
+            @include sp {
+                width: vw(335);
+                justify-content: center;
+            }
+            &__title {
                 width: 528.514px;
                 font-size: 50px;
                 font-weight: 700;
+                @include sp {
+                    width: vw(335);
+                    font-size: vw(36);
+                    font-weight: vw(700);
+                }
             }
-            h3 {
+            &__subtitle {
                 margin-top: 41px;
-                width: 575.301px;
                 font-size: 20px;
                 font-weight: 700;
-                line-height: 34px; /* 170% */
+                line-height: 34px;
                 text-decoration-line: underline;
+                br {
+                    display: none;
+                }
+                @include sp {
+                    margin-top: vw(20);
+                    br {
+                        display: block;
+                    }
+                }
             }
-            p {
+            &__detail {
                 margin-top: 16px;
-                width: 575.301px;
                 font-size: 20px;
                 font-weight: 400;
                 letter-spacing: 0.4px;
+                @include sp {
+                    margin-top: vw(12);
+                }
             }
-            a {
+            &__button {
                 @include linkStyles;
                 @include space_between;
                 width: 350px;
@@ -156,6 +245,19 @@ body {
                 font-size: 24px;
                 font-weight: 700;
                 color: #fff;
+                @include sp {
+                    margin-top: vw(30);
+                    width: vw(335);
+                    padding: vw(16.923) vw(38.462) vw(18.462) vw(38.462);
+                }
+            }
+        }
+        .right {
+            &__select {
+                @include sp {
+                    margin-bottom: vw(-10);
+                    width: vw(334);
+                }
             }
         }
     }
@@ -166,26 +268,40 @@ body {
     .content {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         max-width: 1400px;
         margin: auto;
         padding-top: 100px;
         padding-bottom: 99px;
+        @include sp {
+            justify-content: center;
+            padding-top: vw(66);
+            padding-bottom: vw(87.57);
+        }
         .left {
-            p {
+            &__subtitle {
                 width: 552.063px;
                 font-size: 20px;
                 font-weight: 400;
                 letter-spacing: 0.4px;
                 color: $dark_yellow;
+                @include sp {
+                    width: vw(335);
+                }
             }
-            h2 {
+            &__title {
                 width: 530px;
                 margin-top: 20px;
                 font-size: 50px;
                 font-weight: 700;
                 color: #fff;
+                @include sp {
+                    width: vw(335);
+                    font-size: vw(36);
+                    font-weight: vw(700)
+                }
             }
-            a {
+            &__button {
                 @include linkStyles;
                 @include space_between;
                 width: 350px;
@@ -196,55 +312,98 @@ body {
                 font-size: 24px;
                 font-weight: 700;
                 color: $black;
+                @include sp {
+                    width: vw(335);
+                    margin-top: vw(30);
+                    margin-bottom: vw(98.62);
+                    padding: vw(16.923) vw(38.462) vw(18.462) vw(38.462);
+                }
             }
         }
         .right {
             max-width: 760px;
             display: flex;
             flex-wrap:wrap;
-            gap: 60px;
-            &__box {
-                width: 350px;
-                height: 400px;
-                border-radius: 60px;
-                &__content {
-                    margin: 50px 50px auto 50px;
-                    h3 {
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 60px;
+                li:nth-child(2n+1) {
+                    background-color: #fff;
+                }
+                li:nth-child(2n) {
+                    background-color: $dark_yellow;
+                }
+                @include sp {
+                    gap: 30px;
+                    li:nth-child(odd) {
+                        background-color: #fff;
+                    }
+                    li:nth-child(even) {
+                        background-color: $dark_yellow;
+                    }
+                }
+                &__box {
+                    width: 350px;
+                    height: 400px;
+                    border-radius: 60px;
+                    padding: 50px;
+                    list-style: none;
+                    @include sp {
+                        width: vw(335);
+                        height: vw(382.857);
+                        margin: auto;
+                        padding: vw(47.86) vw(47.86) vw(69.93) vw(47.86);
+                    }
+                    &__icon {
+                        width: 50px;
+                        @include sp {
+                            width: vw(57.429);
+                        }
+                    }
+                    &__num {
                         margin-top: 24px;
                         font-size: 72px;
                         font-weight: 700;
+                        @include sp {
+                            margin-top: vw(22.97);
+                            font-size: vw(72);
+                            font-weight: vw(700);
+                        }
                     }
-                    h4 {
+                    &__title {
                         margin-top: 10px;
                         font-size: 24px;
                         font-weight: 700;
+                        @include sp {
+                            margin-top: vw(9.57);
+                            font-size: vw(24);
+                            font-weight: vw(700);
+                        }
                     }
-                    h5 {
+                    &__subtitle {
                         margin-top: 19px;
                         font-size: 20px;
                         font-weight: 700;
+                        @include sp {
+                            margin-top: vw(18.19);
+                            font-size: vw(20);
+                            font-weight: vw(700);
+                        }
                     }
-                    p {
+                    &__detail {
                         margin-top: 2px;
                         font-size: 18px;
                         font-weight: 700;
                         text-transform: capitalize;
+                        @include sp {
+                            margin-top: vw(1.91);
+                            font-size: vw(18);
+                            font-weight: vw(700);
+                        }
                     }
                 }
-                
             }
-        }
-    }
-    .white {
-        background-color: #fff;
-        span {
-            color: $dark_yellow;
-        }
-    }
-    .yellow {
-        background-color: $dark_yellow;
-        span {
-            color: #fff;
         }
     }
 }
@@ -254,24 +413,42 @@ body {
     .content {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         max-width: 1400px;
         margin: auto;
         padding-top: 100px;
         padding-bottom: 135px;
+        @include sp {
+            padding-top: vw(47);
+            padding-bottom: vw(95.27);
+        }
         .left {
-            h2 {
+            @include sp {
+                width: vw(335);
+                margin: auto;
+            }
+            &__title {
                 width: 599.558px;
                 font-size: 50px;
                 font-weight: 700;
+                @include sp {
+                    width: auto;
+                    font-size: vw(36);
+                    font-weight: vw(700);
+                }
             }
-            ul {
+            &__list {
                 max-width: 633px;
                 margin-top: 43px;
                 display: flex;
                 flex-wrap: wrap;
                 list-style: none;
                 gap: 14px;
-                li {
+                @include sp {
+                    margin-top: vw(30);
+                    gap: vw(13)
+                }
+                &__item {
                     @include center;
                     padding: 14px 40px 14px 20px;
                     gap: 7px;
@@ -279,9 +456,15 @@ body {
                     background-color: #fff;
                     font-size: 20px;
                     font-weight: 700;
+                    @include sp {
+                        padding: vw(11.795) vw(33.701) vw(11.795) vw(16.85);
+                        gap: vw(5.898);
+                        font-size: vw(18);
+                        font-weight: vw(700);
+                    }
                 }
             }
-            a {
+            &__button {
                 @include linkStyles;
                 @include space_between;
                 width: 350px;
@@ -292,17 +475,43 @@ body {
                 font-size: 24px;
                 font-weight: 700;
                 color: #fff;
+                @include sp {
+                    width: auto;
+                    padding: vw(16.923) vw(38.462) vw(18.462) vw(38.462);
+                }
             }
         }
         .right {
-            @include center;
-            width: 750px;
-            height: 650px;
-            background-color: #fff;
-            img {
-                width: 600px;
-                height: auto;
+            margin: auto;
+            .swiper {
+                @include center;
+                width: 750px;
+                height: 650px;
+                background-color: #fff;
+                @include sp {
+                    width: vw(335.462);
+                    height: vw(290.734);
+                    margin-top: vw(62.62);
+                }
+                .swiper-slide {
+                    @include center;
+                    img {
+                        width: 600px;
+                        height: auto;
+                        @include sp {
+                            width: vw(268.37);
+                            height: auto;
+                        }
+                    }
+                }
+                .swiper-button-next {
+                    color: $dark_yellow;
+                }
+                .swiper-button-prev {
+                    color: $dark_yellow;
+                }
             }
+
         }
     }
 }
@@ -314,14 +523,24 @@ body {
         margin: auto;
         padding-top: 100px;
         padding-bottom: 70px;
-        h2 {
+        @include sp {
+            width: vw(335);
+            padding-top: vw(57);
+            padding-bottom: vw(68);
+        }
+        &__title {
             text-align: center;
             font-size: 60px;
             font-weight: 700;
             line-height: 72px;
             color: #fff;
+            @include sp {
+                font-size: vw(36);
+                font-weight: vw(700);
+                line-height: normal;
+            }
         }
-        h3 {
+        &__subtitle {
             margin-top: 14px;
             margin-bottom: 90px;
             text-align: center;
@@ -329,6 +548,13 @@ body {
             font-weight: 400;
             line-height: 40px;
             color: #fff;
+            @include sp {
+                margin-top: vw(20);
+                margin-bottom: vw(54);
+                font-size: vw(16);
+                font-weight: vw(400);
+                line-height: vw(20);
+            }
         }
         &__accordion {
             margin-bottom: 24px;
@@ -336,6 +562,9 @@ body {
             min-height: 140px;
             background-color: #fff;
             border-radius: 40px;
+            @include sp {
+                padding: vw(30) vw(20) vw(30) vw(30);
+            }
             &__toggle {
                 display: none;
             }
@@ -344,19 +573,39 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 cursor: pointer;
+                @include sp {
+                    gap: vw(14);
+                }
                 h4 {
                     user-select: none;
                     font-size: 30px;
                     font-weight: 700;
+                    @include sp {
+                        width: vw(235);
+                        font-size: vw(24);
+                        font-weight: vw(700);
+                    }
+                }
+                #sign {
+                    width: 56px;
+                    @include sp {
+                        width: vw(36);
+                    }
                 }
             }
-            p {
+            &__detail {
                 font-size: 30px;
                 font-weight: 400;
                 line-height: 40px;
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.7s ease-in-out;
+                @include sp {
+                    width: vw(235);
+                    font-size: vw(18);
+                    font-weight: vw(700);
+                    line-height: normal;
+                }
             }
             #show {
                 max-height: 200px;
@@ -372,20 +621,34 @@ body {
         margin: auto;
         padding-top: 100px;
         padding-bottom: 100px;
+        @include sp {
+            width: vw(335);
+            padding-top: vw(46);
+            padding-bottom: vw(79.62);
+        }
         .top {
             display: flex;
             justify-content: space-between;
             padding-bottom: 53px;
             border-bottom: 1px solid rgba(38, 38, 38, 0.12);
+            flex-wrap: wrap;
+            @include sp {
+                padding-bottom: vw(36);
+            }
             &__left {
-                h2 {
+                &__title {
                     width: 713.136px;
                     font-size: 50px;
                     font-weight: 700;
+                    @include sp {
+                        width: auto;
+                        font-size: vw(30);
+                        font-weight: vw(700);
+                    }
                 }
             }
             &__right {
-                a {
+                &__button {
                     @include linkStyles;
                     @include space_between;
                     width: 350px;
@@ -395,6 +658,11 @@ body {
                     font-size: 24px;
                     font-weight: 700;
                     color: $black;
+                    @include sp {
+                        margin-top: vw(30);
+                        width: vw(335);
+                        padding: vw(16.923) vw(38.462) vw(18.462) vw(38.462);
+                    }
                 }
             }
         }
@@ -403,29 +671,50 @@ body {
             justify-content: space-between;
             align-items: baseline;
             margin-top: 52px;
+            @include sp {
+                flex-wrap: wrap;
+                margin-top: vw(30);
+            }
             &__left {
                 p {
                     font-size: 20px;
                     font-weight: 700;
+                    @include sp {
+                        font-size: vw(16);
+                        font-weight: vw(700);
+                    }
                 }
             }
             &__right {
                 display: flex;
-                a {
+                @include sp {
+                    margin-top: vw(7);
+                }
+                &__link {
                     @include linkStyles;
                     font-size: 20px;
                     font-weight: 700;
                     line-height: 34px;
                     text-decoration-line: underline;
                     color: $black;
+                    @include sp {
+                        font-size: vw(16);
+                        font-weight: vw(700);
+                        line-height: normal;
+                    }
                 }
-                p {
+                &__center {
                     user-select: none;
                     margin-left: 5px;
                     margin-right: 5px;
                     font-size: 20px;
                     font-weight: 700;
                     line-height: 34px;
+                    @include sp {
+                        font-size: vw(16);
+                        font-weight: vw(700);
+                        line-height: normal;
+                    }
                 }
             }
         }
