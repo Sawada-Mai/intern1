@@ -7,6 +7,14 @@ body {
 
 #first {
   background-color: #FEEDBC;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  #first {
+    padding: 0px;
+  }
 }
 
 #first .content {
@@ -34,6 +42,18 @@ body {
   margin-bottom: 155px;
 }
 
+@media only screen and (max-width: 1470px) and (min-width: 1281px) {
+  #first .content .top {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  #first .content .top {
+    margin-bottom: 60px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #first .content .top {
     height: calc(60 * (100vw / 375));
@@ -52,6 +72,12 @@ body {
   flex-wrap: wrap-reverse;
 }
 
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  #first .content .bottom {
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #first .content .bottom {
     justify-content: center;
@@ -60,6 +86,12 @@ body {
 
 #first .content .bottom__left {
   width: 780px;
+}
+
+@media only screen and (max-width: 1470px) and (min-width: 1281px) {
+  #first .content .bottom__left {
+    width: 600px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -181,6 +213,14 @@ body {
 
 #second {
   background-color: #F9B800;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  #second {
+    padding: 0px;
+  }
 }
 
 #second .content {
@@ -193,8 +233,15 @@ body {
   padding-bottom: 100px;
 }
 
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  #second .content {
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #second .content {
+    justify-content: center;
     max-width: calc(335 * (100vw / 375));
     padding-top: calc(16 * (100vw / 375));
     padding-bottom: calc(60.62 * (100vw / 375));
@@ -205,10 +252,15 @@ body {
   width: 575.301px;
 }
 
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  #second .content .left {
+    width: 780px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #second .content .left {
     width: calc(335 * (100vw / 375));
-    justify-content: center;
   }
 }
 
@@ -216,6 +268,12 @@ body {
   width: 528.514px;
   font-size: 50px;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  #second .content .left__title {
+    width: 600px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -298,6 +356,14 @@ body {
 
 #third {
   background-color: #262626;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  #third {
+    padding: 0px;
+  }
 }
 
 #third .content {
@@ -310,11 +376,30 @@ body {
   padding-bottom: 99px;
 }
 
+@media only screen and (max-width: 1470px) and (min-width: 1281px) {
+  #third .content {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  #third .content {
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #third .content {
     justify-content: center;
     padding-top: calc(66 * (100vw / 375));
     padding-bottom: calc(87.57 * (100vw / 375));
+  }
+}
+
+@media only screen and (max-width: 1470px) and (min-width: 1281px) {
+  #third .content .left {
+    margin-right: 50px;
+    margin-left: 50px;
   }
 }
 
@@ -369,6 +454,18 @@ body {
   opacity: 0.7;
 }
 
+@media only screen and (max-width: 1470px) and (min-width: 1281px) {
+  #third .content .left__button {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  #third .content .left__button {
+    margin-bottom: 45px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #third .content .left__button {
     width: calc(335 * (100vw / 375));
@@ -388,14 +485,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
-}
-
-#third .content .right__list li:nth-child(2n+1) {
-  background-color: #fff;
-}
-
-#third .content .right__list li:nth-child(2n) {
-  background-color: #F9B800;
 }
 
 @media only screen and (max-width: 768px) {
@@ -494,8 +583,24 @@ body {
   }
 }
 
+#third .content .right__list .white {
+  background-color: #fff;
+}
+
+#third .content .right__list .yellow {
+  background-color: #F9B800;
+}
+
 #fourth {
   background-color: #FEEDBC;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  #fourth {
+    padding: 0px;
+  }
 }
 
 #fourth .content {
@@ -508,10 +613,23 @@ body {
   padding-bottom: 135px;
 }
 
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  #fourth .content {
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #fourth .content {
+    justify-content: center;
     padding-top: calc(47 * (100vw / 375));
     padding-bottom: calc(95.27 * (100vw / 375));
+  }
+}
+
+@media only screen and (max-width: 1470px) and (min-width: 1281px) {
+  #fourth .content .left {
+    width: 580px;
   }
 }
 
@@ -526,6 +644,12 @@ body {
   width: 599.558px;
   font-size: 50px;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 1470px) and (min-width: 1281px) {
+  #fourth .content .left__title {
+    width: 580px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -601,8 +725,11 @@ body {
   }
 }
 
-#fourth .content .right {
-  margin: auto;
+@media only screen and (max-width: 1470px) and (min-width: 1281px) {
+  #fourth .content .right {
+    display: flex;
+    align-items: center;
+  }
 }
 
 #fourth .content .right .swiper {
@@ -612,6 +739,19 @@ body {
   width: 750px;
   height: 650px;
   background-color: #fff;
+}
+
+@media only screen and (max-width: 1470px) and (min-width: 1281px) {
+  #fourth .content .right .swiper {
+    width: 600px;
+    height: 590px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  #fourth .content .right .swiper {
+    margin-top: 45px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -633,6 +773,12 @@ body {
   height: auto;
 }
 
+@media only screen and (max-width: 1470px) and (min-width: 1281px) {
+  #fourth .content .right .swiper .swiper-slide img {
+    width: 500px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #fourth .content .right .swiper .swiper-slide img {
     width: calc(268.37 * (100vw / 375));
@@ -650,6 +796,14 @@ body {
 
 #fifth {
   background-color: #F9B800;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  #fifth {
+    padding: 0px;
+  }
 }
 
 #fifth .content {
@@ -709,6 +863,7 @@ body {
   min-height: 140px;
   background-color: #fff;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -782,6 +937,14 @@ body {
 
 #sixth {
   background-color: #FEEDBC;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  #sixth {
+    padding: 0px;
+  }
 }
 
 #sixth .content {

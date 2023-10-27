@@ -3,27 +3,20 @@
         @content;
     }
 }
-@mixin tab {
+@mixin tab-s {
     @media only screen and (max-width: 1280px) and (min-width: 769px) {
         @content;
     }
 }
-@mixin tab-s {
-    @media only screen and (max-width: 1050px) and (min-width: 769px) {
+@mixin tab {
+    @media only screen and (max-width: 1470px) and (min-width: 1281px) {
         @content;
     }
 }
 
-@function pcvw($px) {
-    @return calc(#{$px} * (100vw / #{1440}));
-}
-@function tbvw($px) {
-    @return calc(#{$px} * (100vw / #{1280}));
-}
 @function vw($px) {
     @return calc(#{$px} * (100vw / #{375}));
 }
-
 
 @mixin center{
     display: flex;
@@ -57,6 +50,11 @@ body {
 
 #first {
     background-color: $light_yellow;
+    padding-right: 35px;
+    padding-left: 35px;
+    @include sp {
+        padding: 0px;
+    }
     .content {
         margin: auto;
         max-width: 1400px;
@@ -73,6 +71,12 @@ body {
             background-color: #fff;
             border-radius: 5000px;
             margin-bottom: 155px;
+            @include tab {
+                margin-bottom: 100px;
+            }
+            @include tab-s {
+                margin-bottom: 60px;
+            }
             @include sp {
                 height: vw(60);
                 margin: auto;
@@ -87,11 +91,17 @@ body {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap-reverse;
+            @include tab-s {
+                justify-content: center;
+            }
             @include sp {
                 justify-content: center;
             }
             &__left {
                 width: 780px;
+                @include tab {
+                    width: 600px;
+                }
                 @include sp {
                     width: auto;
                 }
@@ -180,6 +190,11 @@ body {
 
 #second {
     background-color: $dark_yellow;
+    padding-right: 35px;
+    padding-left: 35px;
+    @include sp {
+        padding: 0px;
+    }
     .content {
         display: flex;
         justify-content: space-between;
@@ -188,21 +203,30 @@ body {
         margin: auto;
         padding-top: 102px;
         padding-bottom: 100px;
+        @include tab-s {
+            justify-content: center;
+        }
         @include sp {
+            justify-content: center;
             max-width: vw(335);
             padding-top: vw(16);
             padding-bottom: vw(60.62);
         }
         .left {
             width: 575.301px;
+            @include tab-s {
+                width: 780px;
+            }
             @include sp {
                 width: vw(335);
-                justify-content: center;
             }
             &__title {
                 width: 528.514px;
                 font-size: 50px;
                 font-weight: 700;
+                @include tab-s {
+                    width: 600px;
+                }
                 @include sp {
                     width: vw(335);
                     font-size: vw(36);
@@ -265,6 +289,11 @@ body {
 
 #third {
     background-color: $black;
+    padding-right: 35px;
+    padding-left: 35px;
+    @include sp {
+        padding: 0px;
+    }
     .content {
         display: flex;
         justify-content: space-between;
@@ -273,12 +302,22 @@ body {
         margin: auto;
         padding-top: 100px;
         padding-bottom: 99px;
+        @include tab {
+            justify-content: center;
+        }
+        @include tab-s {
+            justify-content: center;
+        }
         @include sp {
             justify-content: center;
             padding-top: vw(66);
             padding-bottom: vw(87.57);
         }
         .left {
+            @include tab {
+                margin-right: 50px;
+                margin-left: 50px;
+            }
             &__subtitle {
                 width: 552.063px;
                 font-size: 20px;
@@ -312,6 +351,12 @@ body {
                 font-size: 24px;
                 font-weight: 700;
                 color: $black;
+                @include tab {
+                    margin-bottom: 50px;
+                }
+                @include tab-s {
+                    margin-bottom: 45px;
+                }
                 @include sp {
                     width: vw(335);
                     margin-top: vw(30);
@@ -328,12 +373,6 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 60px;
-                li:nth-child(2n+1) {
-                    background-color: #fff;
-                }
-                li:nth-child(2n) {
-                    background-color: $dark_yellow;
-                }
                 @include sp {
                     gap: 30px;
                     li:nth-child(odd) {
@@ -403,6 +442,12 @@ body {
                         }
                     }
                 }
+                .white {
+                    background-color: #fff;
+                }
+                .yellow {
+                    background-color: $dark_yellow;
+                }
             }
         }
     }
@@ -410,6 +455,11 @@ body {
 
 #fourth {
     background-color: $light_yellow;
+    padding-right: 35px;
+    padding-left: 35px;
+    @include sp {
+        padding: 0px;
+    }
     .content {
         display: flex;
         justify-content: space-between;
@@ -418,11 +468,18 @@ body {
         margin: auto;
         padding-top: 100px;
         padding-bottom: 135px;
+        @include tab-s {
+            justify-content: center;
+        }
         @include sp {
+            justify-content: center;
             padding-top: vw(47);
             padding-bottom: vw(95.27);
         }
         .left {
+            @include tab {
+                width: 580px;
+            }
             @include sp {
                 width: vw(335);
                 margin: auto;
@@ -431,6 +488,9 @@ body {
                 width: 599.558px;
                 font-size: 50px;
                 font-weight: 700;
+                @include tab {
+                    width: 580px;
+                }
                 @include sp {
                     width: auto;
                     font-size: vw(36);
@@ -482,12 +542,22 @@ body {
             }
         }
         .right {
-            margin: auto;
+            @include tab {
+                display: flex;
+                align-items: center;
+            }
             .swiper {
                 @include center;
                 width: 750px;
                 height: 650px;
                 background-color: #fff;
+                @include tab {
+                    width: 600px;
+                    height: 590px;
+                }
+                @include tab-s {
+                    margin-top: 45px;
+                }
                 @include sp {
                     width: vw(335.462);
                     height: vw(290.734);
@@ -498,6 +568,9 @@ body {
                     img {
                         width: 600px;
                         height: auto;
+                        @include tab {
+                            width: 500px;
+                        }
                         @include sp {
                             width: vw(268.37);
                             height: auto;
@@ -518,6 +591,11 @@ body {
 
 #fifth {
     background-color: $dark_yellow;
+    padding-right: 35px;
+    padding-left: 35px;
+    @include sp {
+        padding: 0px;
+    }
     .content {
         max-width: 1400px;
         margin: auto;
@@ -562,6 +640,7 @@ body {
             min-height: 140px;
             background-color: #fff;
             border-radius: 40px;
+            cursor: pointer;
             @include sp {
                 padding: vw(30) vw(20) vw(30) vw(30);
             }
@@ -616,6 +695,11 @@ body {
 
 #sixth {
     background-color: $light_yellow;
+    padding-right: 35px;
+    padding-left: 35px;
+    @include sp {
+        padding: 0px;
+    }
     .content {
         max-width: 1400px;
         margin: auto;
